@@ -1,7 +1,7 @@
 # Combustion-Control
 Designed by Josh Azrin and Arthur Zhang.
 
-![Board Front](./renders/pressurization_series1_f.jpg)
+![Board Front](./Board/renders/pressurization_series1_f.jpg)
 |:--:| 
 | *Front of PCB* |
 
@@ -16,7 +16,7 @@ Combustion-Control is a project that Josh and I researched and designed to activ
 
 ## Overview
 
-![Pressure Explanation](./docs/pressure_fed_rocket.png)
+![Pressure Explanation](./Board/docs/pressure_fed_rocket.png)
 |:--:| 
 | *Diagram of Pressure Fed Rocket* |
 
@@ -24,7 +24,7 @@ Liquid fuel rockets typically use a pressurized gas like helium to force fuel an
 
 ## Board Specs
 
-![Board Back](./renders/pressurization_series1_b.jpg)
+![Board Back](./Board/renders/pressurization_series1_b.jpg)
 |:--:| 
 | *Back of PCB* |
 
@@ -58,7 +58,7 @@ the placement of the components.
 
 The board organizational hierachy can be seen in the schematic below.
 
-![Schematic](./docs/schematic-top.jpg)
+![Schematic](./Board/docs/schematic-top.jpg)
 
 ## Key Features
 
@@ -74,7 +74,7 @@ in case parts of the system become damaged and unusable during testing.
 
 ## Firmware Architecture
 
-![State Diagram](./docs/state-diagram.png)
+![State Diagram](./Board/docs/state-diagram.png)
 |:--:| 
 | *State Diagram of Firmware* |
 
