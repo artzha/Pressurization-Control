@@ -1,0 +1,9 @@
+(module sternie:TP-0.047 (layer F.Cu) (tedit 5C2C0C9C)
+  (fp_text reference TP9 (at 0.4 2.1) (layer F.SilkS) hide
+    (effects (font (size 0.7112 0.7112) (thickness 0.1016)))
+  )
+  (fp_text value TEST (at 0.2 -1.9) (layer F.Fab)
+    (effects (font (size 1 1) (thickness 0.15)))
+  )
+  (pad 1 thru_hole circle (at 0 0) (size 2.286 2.286) (drill 1.27) (layers *.Cu *.Mask))
+)

@@ -1,0 +1,728 @@
+EESchema Schematic File Version 4
+EELAYER 30 0
+EELAYER END
+$Descr A4 11693 8268
+encoding utf-8
+Sheet 21 25
+Title "Pressurization Board Series 1"
+Date "2020-08-17"
+Rev "Rev A"
+Comp "Michigan Aeronautical Science Association (MASA)"
+Comment1 "Josh Azrin & Arthur Zhang"
+Comment2 ""
+Comment3 ""
+Comment4 ""
+$EndDescr
+Text GLabel 1575 2175 0    50   Input ~ 0
+mtr0_inA0
+Text GLabel 2925 2475 2    50   Input ~ 0
+i_mtr0A
+Text GLabel 1575 1875 0    50   Input ~ 0
+mtr0_pwmA
+$Comp
+L pressurization_series1-rescue:Jumper-Device JP15
+U 1 1 5E67171D
+P 5550 1375
+F 0 "JP15" H 5550 1325 50  0000 C CNN
+F 1 "Jumper" H 5550 1548 50  0001 C CNN
+F 2 "KiCad:R_0603_1608Metric" H 5550 1375 50  0001 C CNN
+F 3 "~" H 5550 1375 50  0001 C CNN
+	1    5550 1375
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	5250 1375 4750 1375
+Wire Wire Line
+	5250 1875 5150 1875
+Wire Wire Line
+	5250 1625 4950 1625
+Wire Wire Line
+	4750 1275 4750 1375
+Connection ~ 4750 1375
+Wire Wire Line
+	4950 1275 4950 1625
+Wire Wire Line
+	5150 1275 5150 1875
+$Sheet
+S 4900 4050 1400 875 
+U 5E9A6A8E
+F0 "mtr2" 50
+F1 "bldc_motor_channel.sch" 50
+F2 "pwm_en0" I L 4900 4150 50 
+F3 "pwm_en1" I L 4900 4275 50 
+F4 "pwm_en2" I L 4900 4400 50 
+F5 "logic_in0" I L 4900 4575 50 
+F6 "logic_in1" I L 4900 4700 50 
+F7 "logic_in2" I L 4900 4825 50 
+F8 "mtr_outa" I R 6300 4200 50 
+F9 "mtr_outb" I R 6300 4375 50 
+F10 "mtr_outc" I R 6300 4550 50 
+F11 "i_mtr" I R 6300 4800 50 
+$EndSheet
+Wire Wire Line
+	1650 1875 1575 1875
+Wire Wire Line
+	2850 2475 2925 2475
+Wire Wire Line
+	1650 2175 1575 2175
+$Comp
+L pressurization_series1-rescue:Jumper-Device JP17
+U 1 1 5E9C088D
+P 5550 1875
+F 0 "JP17" H 5550 1825 50  0000 C CNN
+F 1 "Jumper" H 5550 2048 50  0001 C CNN
+F 2 "KiCad:R_0603_1608Metric" H 5550 1875 50  0001 C CNN
+F 3 "~" H 5550 1875 50  0001 C CNN
+	1    5550 1875
+	1    0    0    -1  
+$EndComp
+$Comp
+L pressurization_series1-rescue:Jumper-Device JP18
+U 1 1 5E9C29D1
+P 5550 2125
+F 0 "JP18" H 5550 2075 50  0000 C CNN
+F 1 "Jumper" H 5550 2298 50  0001 C CNN
+F 2 "KiCad:R_0603_1608Metric" H 5550 2125 50  0001 C CNN
+F 3 "~" H 5550 2125 50  0001 C CNN
+	1    5550 2125
+	1    0    0    -1  
+$EndComp
+$Comp
+L pressurization_series1-rescue:Jumper-Device JP19
+U 1 1 5E9C49D1
+P 5550 2375
+F 0 "JP19" H 5550 2325 50  0000 C CNN
+F 1 "Jumper" H 5550 2548 50  0001 C CNN
+F 2 "KiCad:R_0603_1608Metric" H 5550 2375 50  0001 C CNN
+F 3 "~" H 5550 2375 50  0001 C CNN
+	1    5550 2375
+	1    0    0    -1  
+$EndComp
+$Comp
+L pressurization_series1-rescue:Jumper-Device JP20
+U 1 1 5E9C68DE
+P 5550 2625
+F 0 "JP20" H 5550 2575 50  0000 C CNN
+F 1 "Jumper" H 5550 2798 50  0001 C CNN
+F 2 "KiCad:R_0603_1608Metric" H 5550 2625 50  0001 C CNN
+F 3 "~" H 5550 2625 50  0001 C CNN
+	1    5550 2625
+	1    0    0    -1  
+$EndComp
+Connection ~ 4950 1625
+Connection ~ 5150 1875
+Wire Wire Line
+	5250 2125 4750 2125
+Wire Wire Line
+	5250 2375 4950 2375
+Wire Wire Line
+	4750 1375 4750 2125
+Wire Wire Line
+	5150 1875 5150 2625
+Wire Wire Line
+	4950 1625 4950 2375
+Wire Wire Line
+	5850 2375 5925 2375
+Wire Wire Line
+	5850 2125 5925 2125
+Wire Wire Line
+	5850 1875 5925 1875
+Wire Wire Line
+	5850 1625 5925 1625
+Wire Wire Line
+	5850 1375 5925 1375
+Text Notes 6975 2950 0    50   ~ 0
+Voltage divider to step down the sensor voltage to <3.3V for the micro, if it is >3.3V.\nIf it is <3.3V, a 0 ohm resistor can be used on the top and the bottom one must be left open.
+Text GLabel 4850 4150 0    50   Input ~ 0
+mtr2_pwm0
+Text GLabel 4850 4275 0    50   Input ~ 0
+mtr2_pwm1
+Text GLabel 4850 4400 0    50   Input ~ 0
+mtr2_pwm2
+Wire Wire Line
+	4850 4150 4900 4150
+Wire Wire Line
+	4900 4275 4850 4275
+Wire Wire Line
+	4850 4400 4900 4400
+Text GLabel 4850 4575 0    50   Input ~ 0
+mtr2_in0
+Text GLabel 4850 4700 0    50   Input ~ 0
+mtr2_in1
+Text GLabel 4850 4825 0    50   Input ~ 0
+mtr2_in2
+Wire Wire Line
+	4900 4575 4850 4575
+Wire Wire Line
+	4850 4700 4900 4700
+Wire Wire Line
+	4900 4825 4850 4825
+Text GLabel 6375 4800 2    50   Input ~ 0
+i_mtr2
+Wire Wire Line
+	4850 6075 4900 6075
+Wire Wire Line
+	4900 5950 4850 5950
+Wire Wire Line
+	4850 5825 4900 5825
+Text GLabel 4850 5825 0    50   Input ~ 0
+mtr3_in0
+Text GLabel 4850 5950 0    50   Input ~ 0
+mtr3_in1
+Text GLabel 4850 6075 0    50   Input ~ 0
+mtr3_in2
+Wire Wire Line
+	4850 5650 4900 5650
+Wire Wire Line
+	4900 5525 4850 5525
+Wire Wire Line
+	4850 5400 4900 5400
+Text GLabel 4850 5650 0    50   Input ~ 0
+mtr3_pwm2
+Text GLabel 4850 5525 0    50   Input ~ 0
+mtr3_pwm1
+Text GLabel 4850 5400 0    50   Input ~ 0
+mtr3_pwm0
+$Sheet
+S 4900 5300 1400 875 
+U 5E9A6A99
+F0 "mtr3" 50
+F1 "bldc_motor_channel.sch" 50
+F2 "pwm_en0" I L 4900 5400 50 
+F3 "pwm_en1" I L 4900 5525 50 
+F4 "pwm_en2" I L 4900 5650 50 
+F5 "logic_in0" I L 4900 5825 50 
+F6 "logic_in1" I L 4900 5950 50 
+F7 "logic_in2" I L 4900 6075 50 
+F8 "mtr_outa" I R 6300 5450 50 
+F9 "mtr_outb" I R 6300 5625 50 
+F10 "mtr_outc" I R 6300 5800 50 
+F11 "i_mtr" I R 6300 6000 50 
+$EndSheet
+Text GLabel 6375 6000 2    50   Input ~ 0
+i_mtr3
+Text GLabel 7750 2050 2    50   Input ~ 0
+e_digSens1B
+Text GLabel 8425 2050 2    50   Input ~ 0
+e_digSens1A
+$Comp
+L pressurization_series1-rescue:R-Device R103
+U 1 1 5E9E7003
+P 8375 1825
+F 0 "R103" V 8275 1825 50  0000 C CNN
+F 1 "R" V 8350 1825 50  0000 C TNN
+F 2 "KiCad:R_0603_1608Metric" V 8305 1825 50  0001 C CNN
+F 3 "~" H 8375 1825 50  0001 C CNN
+	1    8375 1825
+	-1   0    0    1   
+$EndComp
+Wire Wire Line
+	8375 1675 8375 1600
+Wire Wire Line
+	8375 1975 8375 2050
+$Comp
+L pressurization_series1-rescue:R-Device R104
+U 1 1 5E9E700B
+P 8375 2275
+F 0 "R104" V 8275 2275 50  0000 C CNN
+F 1 "R" V 8350 2275 50  0000 C TNN
+F 2 "KiCad:R_0603_1608Metric" V 8305 2275 50  0001 C CNN
+F 3 "~" H 8375 2275 50  0001 C CNN
+	1    8375 2275
+	-1   0    0    1   
+$EndComp
+Wire Wire Line
+	8375 2425 8375 2525
+$Comp
+L pressurization_series1-rescue:R-Device R105
+U 1 1 5E9E7019
+P 9050 1825
+F 0 "R105" V 8950 1825 50  0000 C CNN
+F 1 "R" V 9025 1825 50  0000 C TNN
+F 2 "KiCad:R_0603_1608Metric" V 8980 1825 50  0001 C CNN
+F 3 "~" H 9050 1825 50  0001 C CNN
+	1    9050 1825
+	-1   0    0    1   
+$EndComp
+Wire Wire Line
+	9050 1675 9050 1600
+Wire Wire Line
+	9050 1975 9050 2050
+$Comp
+L pressurization_series1-rescue:R-Device R106
+U 1 1 5E9E7021
+P 9050 2275
+F 0 "R106" V 8950 2275 50  0000 C CNN
+F 1 "R" V 9025 2275 50  0000 C TNN
+F 2 "KiCad:R_0603_1608Metric" V 8980 2275 50  0001 C CNN
+F 3 "~" H 9050 2275 50  0001 C CNN
+	1    9050 2275
+	-1   0    0    1   
+$EndComp
+Wire Wire Line
+	9050 2425 9050 2525
+Text GLabel 9100 2050 2    50   Input ~ 0
+e_digSens0C
+Wire Wire Line
+	9050 2050 9100 2050
+Connection ~ 9050 2050
+Wire Wire Line
+	9050 2050 9050 2125
+Wire Wire Line
+	8425 2050 8375 2050
+Connection ~ 8375 2050
+Wire Wire Line
+	8375 2050 8375 2125
+Text GLabel 9800 2050 2    50   Input ~ 0
+e_digSens0B
+$Comp
+L pressurization_series1-rescue:R-Device R107
+U 1 1 5EA004FC
+P 9750 1825
+F 0 "R107" V 9650 1825 50  0000 C CNN
+F 1 "R" V 9725 1825 50  0000 C TNN
+F 2 "KiCad:R_0603_1608Metric" V 9680 1825 50  0001 C CNN
+F 3 "~" H 9750 1825 50  0001 C CNN
+	1    9750 1825
+	-1   0    0    1   
+$EndComp
+Wire Wire Line
+	9750 1675 9750 1600
+Wire Wire Line
+	9750 1975 9750 2050
+$Comp
+L pressurization_series1-rescue:R-Device R108
+U 1 1 5EA00504
+P 9750 2275
+F 0 "R108" V 9650 2275 50  0000 C CNN
+F 1 "R" V 9725 2275 50  0000 C TNN
+F 2 "KiCad:R_0603_1608Metric" V 9680 2275 50  0001 C CNN
+F 3 "~" H 9750 2275 50  0001 C CNN
+	1    9750 2275
+	-1   0    0    1   
+$EndComp
+Wire Wire Line
+	9750 2425 9750 2525
+$Comp
+L pressurization_series1-rescue:R-Device R109
+U 1 1 5EA00512
+P 10400 1825
+F 0 "R109" V 10300 1825 50  0000 C CNN
+F 1 "R" V 10375 1825 50  0000 C TNN
+F 2 "KiCad:R_0603_1608Metric" V 10330 1825 50  0001 C CNN
+F 3 "~" H 10400 1825 50  0001 C CNN
+	1    10400 1825
+	-1   0    0    1   
+$EndComp
+Wire Wire Line
+	10400 1675 10400 1600
+Wire Wire Line
+	10400 1975 10400 2050
+$Comp
+L pressurization_series1-rescue:R-Device R110
+U 1 1 5EA0051A
+P 10400 2275
+F 0 "R110" V 10300 2275 50  0000 C CNN
+F 1 "R" V 10375 2275 50  0000 C TNN
+F 2 "KiCad:R_0603_1608Metric" V 10330 2275 50  0001 C CNN
+F 3 "~" H 10400 2275 50  0001 C CNN
+	1    10400 2275
+	-1   0    0    1   
+$EndComp
+Wire Wire Line
+	10400 2425 10400 2525
+Text GLabel 10450 2050 2    50   Input ~ 0
+e_digSens0A
+Wire Wire Line
+	10400 2050 10450 2050
+Connection ~ 10400 2050
+Wire Wire Line
+	10400 2050 10400 2125
+Wire Wire Line
+	9800 2050 9750 2050
+Connection ~ 9750 2050
+Wire Wire Line
+	9750 2050 9750 2125
+Wire Wire Line
+	7025 2050 7025 2125
+Connection ~ 7025 2050
+Wire Wire Line
+	7075 2050 7025 2050
+Wire Wire Line
+	7700 2050 7700 2125
+Connection ~ 7700 2050
+Wire Wire Line
+	7750 2050 7700 2050
+Wire Wire Line
+	7700 2425 7700 2525
+$Comp
+L pressurization_series1-rescue:R-Device R102
+U 1 1 5E9E6FF4
+P 7700 2275
+F 0 "R102" V 7600 2275 50  0000 C CNN
+F 1 "R" V 7675 2275 50  0000 C TNN
+F 2 "KiCad:R_0603_1608Metric" V 7630 2275 50  0001 C CNN
+F 3 "~" H 7700 2275 50  0001 C CNN
+	1    7700 2275
+	-1   0    0    1   
+$EndComp
+Wire Wire Line
+	7700 1975 7700 2050
+Wire Wire Line
+	7700 1675 7700 1600
+$Comp
+L pressurization_series1-rescue:R-Device R101
+U 1 1 5E9E6FEC
+P 7700 1825
+F 0 "R101" V 7600 1825 50  0000 C CNN
+F 1 "R" V 7675 1825 50  0000 C TNN
+F 2 "KiCad:R_0603_1608Metric" V 7630 1825 50  0001 C CNN
+F 3 "~" H 7700 1825 50  0001 C CNN
+	1    7700 1825
+	-1   0    0    1   
+$EndComp
+Wire Wire Line
+	7025 2425 7025 2525
+$Comp
+L pressurization_series1-rescue:R-Device R100
+U 1 1 5E9E6FDD
+P 7025 2275
+F 0 "R100" V 6925 2275 50  0000 C CNN
+F 1 "R" V 7000 2275 50  0000 C TNN
+F 2 "KiCad:R_0603_1608Metric" V 6955 2275 50  0001 C CNN
+F 3 "~" H 7025 2275 50  0001 C CNN
+	1    7025 2275
+	-1   0    0    1   
+$EndComp
+Wire Wire Line
+	7025 1975 7025 2050
+Wire Wire Line
+	7025 1675 7025 1600
+$Comp
+L pressurization_series1-rescue:R-Device R99
+U 1 1 5E9E6FD5
+P 7025 1825
+F 0 "R99" V 6925 1825 50  0000 C CNN
+F 1 "R" V 7000 1825 50  0000 C TNN
+F 2 "KiCad:R_0603_1608Metric" V 6955 1825 50  0001 C CNN
+F 3 "~" H 7025 1825 50  0001 C CNN
+	1    7025 1825
+	-1   0    0    1   
+$EndComp
+Text GLabel 6375 4200 2    50   Input ~ 0
+mtr2A
+Text GLabel 6375 4375 2    50   Input ~ 0
+mtr2B
+Text GLabel 6375 4550 2    50   Input ~ 0
+mtr2C
+Wire Wire Line
+	6375 4200 6300 4200
+Wire Wire Line
+	6375 4375 6300 4375
+Wire Wire Line
+	6375 4550 6300 4550
+Text GLabel 6375 5450 2    50   Input ~ 0
+mtr3A
+Text GLabel 6375 5625 2    50   Input ~ 0
+mtr3B
+Text GLabel 6375 5800 2    50   Input ~ 0
+mtr3C
+Wire Wire Line
+	6375 5450 6300 5450
+Wire Wire Line
+	6375 5625 6300 5625
+Wire Wire Line
+	6375 5800 6300 5800
+Text GLabel 7025 1600 1    50   Input ~ 0
+digSens1C
+Text GLabel 7700 1600 1    50   Input ~ 0
+digSens1B
+Text GLabel 8375 1600 1    50   Input ~ 0
+digSens1A
+Text GLabel 9050 1600 1    50   Input ~ 0
+digSens0C
+Text GLabel 9750 1600 1    50   Input ~ 0
+digSens0B
+Text GLabel 10400 1600 1    50   Input ~ 0
+digSens0A
+Text GLabel 5925 1375 2    50   Input ~ 0
+p_digSens0
+Text GLabel 5925 1625 2    50   Input ~ 0
+p_digSens0
+$Comp
+L pressurization_series1-rescue:Jumper-Device JP16
+U 1 1 5E9BE599
+P 5550 1625
+F 0 "JP16" H 5550 1575 50  0000 C CNN
+F 1 "Jumper" H 5550 1798 50  0001 C CNN
+F 2 "KiCad:R_0603_1608Metric" H 5550 1625 50  0001 C CNN
+F 3 "~" H 5550 1625 50  0001 C CNN
+	1    5550 1625
+	1    0    0    -1  
+$EndComp
+Text GLabel 5925 1875 2    50   Input ~ 0
+p_digSens0
+Text GLabel 5925 2125 2    50   Input ~ 0
+p_digSens1
+Text GLabel 5925 2375 2    50   Input ~ 0
+p_digSens1
+Text GLabel 5925 2625 2    50   Input ~ 0
+p_digSens1
+Wire Wire Line
+	5850 2625 5925 2625
+Wire Wire Line
+	5150 2625 5250 2625
+Text Notes 4450 3125 0    50   ~ 0
+Encoder/Hall could possibly be powered by 3.3v, 5v, or 12v\nThese lines can also be used to power hall effect sensors.\n\n\n
+Text Notes 600  1125 0    50   ~ 0
+Can also support brushed dc motors\n15A max per phase\nA & B refer to the two phases of a bipolar stepper motor\n
+Text Notes 4250 3725 0    50   ~ 0
+Channels 2,3 are for brushless dc motors\n
+Text GLabel 7075 2050 2    50   Input ~ 0
+e_digSens1C
+$Comp
+L pressurization_series1-rescue:GND-power #PWR0187
+U 1 1 5EADC5F3
+P 7025 2525
+F 0 "#PWR0187" H 7025 2275 50  0001 C CNN
+F 1 "GND" H 7030 2352 50  0000 C CNN
+F 2 "" H 7025 2525 50  0001 C CNN
+F 3 "" H 7025 2525 50  0001 C CNN
+	1    7025 2525
+	1    0    0    -1  
+$EndComp
+$Comp
+L pressurization_series1-rescue:GND-power #PWR0190
+U 1 1 5EADCCD2
+P 7700 2525
+F 0 "#PWR0190" H 7700 2275 50  0001 C CNN
+F 1 "GND" H 7705 2352 50  0000 C CNN
+F 2 "" H 7700 2525 50  0001 C CNN
+F 3 "" H 7700 2525 50  0001 C CNN
+	1    7700 2525
+	1    0    0    -1  
+$EndComp
+$Comp
+L pressurization_series1-rescue:GND-power #PWR0192
+U 1 1 5EADD61F
+P 8375 2525
+F 0 "#PWR0192" H 8375 2275 50  0001 C CNN
+F 1 "GND" H 8380 2352 50  0000 C CNN
+F 2 "" H 8375 2525 50  0001 C CNN
+F 3 "" H 8375 2525 50  0001 C CNN
+	1    8375 2525
+	1    0    0    -1  
+$EndComp
+$Comp
+L pressurization_series1-rescue:GND-power #PWR0193
+U 1 1 5EADDA01
+P 9050 2525
+F 0 "#PWR0193" H 9050 2275 50  0001 C CNN
+F 1 "GND" H 9055 2352 50  0000 C CNN
+F 2 "" H 9050 2525 50  0001 C CNN
+F 3 "" H 9050 2525 50  0001 C CNN
+	1    9050 2525
+	1    0    0    -1  
+$EndComp
+$Comp
+L pressurization_series1-rescue:GND-power #PWR0194
+U 1 1 5EADDD6E
+P 9750 2525
+F 0 "#PWR0194" H 9750 2275 50  0001 C CNN
+F 1 "GND" H 9755 2352 50  0000 C CNN
+F 2 "" H 9750 2525 50  0001 C CNN
+F 3 "" H 9750 2525 50  0001 C CNN
+	1    9750 2525
+	1    0    0    -1  
+$EndComp
+$Comp
+L pressurization_series1-rescue:GND-power #PWR0195
+U 1 1 5EADE3B1
+P 10400 2525
+F 0 "#PWR0195" H 10400 2275 50  0001 C CNN
+F 1 "GND" H 10405 2352 50  0000 C CNN
+F 2 "" H 10400 2525 50  0001 C CNN
+F 3 "" H 10400 2525 50  0001 C CNN
+	1    10400 2525
+	1    0    0    -1  
+$EndComp
+$Comp
+L pressurization_series1-rescue:+3.3V-power #PWR0188
+U 1 1 5EAED665
+P 4750 1275
+F 0 "#PWR0188" H 4750 1125 50  0001 C CNN
+F 1 "+3.3V" H 4765 1448 50  0000 C CNN
+F 2 "" H 4750 1275 50  0001 C CNN
+F 3 "" H 4750 1275 50  0001 C CNN
+	1    4750 1275
+	1    0    0    -1  
+$EndComp
+$Comp
+L pressurization_series1-rescue:+5V-power #PWR0189
+U 1 1 5EAEE035
+P 4950 1275
+F 0 "#PWR0189" H 4950 1125 50  0001 C CNN
+F 1 "+5V" H 4965 1448 50  0000 C CNN
+F 2 "" H 4950 1275 50  0001 C CNN
+F 3 "" H 4950 1275 50  0001 C CNN
+	1    4950 1275
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	6375 4800 6300 4800
+Wire Wire Line
+	6375 6000 6300 6000
+Text GLabel 2925 1850 2    50   Input ~ 0
+mtr0A+
+Text GLabel 2925 1975 2    50   Input ~ 0
+mtr0A-
+Wire Wire Line
+	2850 1975 2925 1975
+Wire Wire Line
+	2850 1850 2925 1850
+Text GLabel 1575 2325 0    50   Input ~ 0
+mtr0_inA1
+Wire Wire Line
+	1650 2325 1575 2325
+Text Notes 4450 800  0    123  ~ 25
+Digital Sensors: Encoders or Hall Effect Sensors\n
+Text Notes 8925 3550 0    123  ~ 25
+Potentiometers
+Text Notes 550  800  0    157  ~ 31
+Bipolar Stepper Motors\n
+Text Notes 4200 3525 0    123  ~ 25
+Brushless DC Motors (3 phase)
+Wire Notes Line
+	4150 475  4150 7800
+Text Notes 9325 4900 0    50   ~ 0
+Two potentiometers are for \nmeasuring the two motor positions. \nTwo extra potentiometers are for \nmeasuring the position of the \ntwo needle valves turned by the motors.
+Wire Notes Line
+	8825 3250 8825 6525
+Text Notes 4475 925  0    50   ~ 0
+Encoders have two output voltages, hall effect sensors have three output voltages
+Text Notes 8950 3675 0    50   ~ 0
+For any motor (and valves)
+$Comp
+L pressurization_series1-rescue:+12C-power #PWR0191
+U 1 1 5EBFC1DF
+P 5150 1275
+F 0 "#PWR0191" H 5150 1125 50  0001 C CNN
+F 1 "+12C" H 5165 1448 50  0000 C CNN
+F 2 "" H 5150 1275 50  0001 C CNN
+F 3 "" H 5150 1275 50  0001 C CNN
+	1    5150 1275
+	1    0    0    -1  
+$EndComp
+Text Notes 9325 5375 0    50   ~ 0
+Potentiometer signal goes straight\nfrom connector to ADC.\nPotentiometers are not filtered because\nthe center frequency of the filter changes \nwith potentiometer position.
+$Sheet
+S 1650 1725 1200 1075
+U 5E507A5C
+F0 "mtr0" 50
+F1 "stepper_motor_channel.sch" 50
+F2 "i_mtrA" I R 2850 2475 50 
+F3 "outA-" I R 2850 1975 50 
+F4 "outA+" I R 2850 1850 50 
+F5 "pwmA" I L 1650 1875 50 
+F6 "pwmB" I L 1650 2025 50 
+F7 "logic_inA0" I L 1650 2175 50 
+F8 "logic_inA1" I L 1650 2325 50 
+F9 "logic_inB0" I L 1650 2500 50 
+F10 "logic_inB1" I L 1650 2650 50 
+F11 "outB+" I R 2850 2125 50 
+F12 "outB-" I R 2850 2250 50 
+F13 "i_mtrB" I R 2850 2650 50 
+$EndSheet
+Wire Wire Line
+	1650 2025 1575 2025
+Text GLabel 1575 2025 0    50   Input ~ 0
+mtr0_pwmB
+Text GLabel 1575 2500 0    50   Input ~ 0
+mtr0_inB0
+Wire Wire Line
+	1650 2500 1575 2500
+Text GLabel 1575 2650 0    50   Input ~ 0
+mtr0_inB1
+Wire Wire Line
+	1650 2650 1575 2650
+Text GLabel 2925 2125 2    50   Input ~ 0
+mtr0B+
+Text GLabel 2925 2250 2    50   Input ~ 0
+mtr0B-
+Wire Wire Line
+	2850 2250 2925 2250
+Wire Wire Line
+	2850 2125 2925 2125
+Text GLabel 2925 2650 2    50   Input ~ 0
+i_mtr0B
+Wire Wire Line
+	2850 2650 2925 2650
+Text GLabel 1625 4950 0    50   Input ~ 0
+mtr1_inA0
+Text GLabel 2975 5250 2    50   Input ~ 0
+i_mtr1A
+Text GLabel 1625 4650 0    50   Input ~ 0
+mtr1_pwmA
+Wire Wire Line
+	1700 4650 1625 4650
+Wire Wire Line
+	2900 5250 2975 5250
+Wire Wire Line
+	1700 4950 1625 4950
+Text GLabel 2975 4625 2    50   Input ~ 0
+mtr1A+
+Text GLabel 2975 4750 2    50   Input ~ 0
+mtr1A-
+Wire Wire Line
+	2900 4750 2975 4750
+Wire Wire Line
+	2900 4625 2975 4625
+Text GLabel 1625 5100 0    50   Input ~ 0
+mtr1_inA1
+Wire Wire Line
+	1700 5100 1625 5100
+$Sheet
+S 1700 4500 1200 1075
+U 5F3792D1
+F0 "mtr1" 50
+F1 "stepper_motor_channel.sch" 50
+F2 "i_mtrA" I R 2900 5250 50 
+F3 "outA-" I R 2900 4750 50 
+F4 "outA+" I R 2900 4625 50 
+F5 "pwmA" I L 1700 4650 50 
+F6 "pwmB" I L 1700 4800 50 
+F7 "logic_inA0" I L 1700 4950 50 
+F8 "logic_inA1" I L 1700 5100 50 
+F9 "logic_inB0" I L 1700 5275 50 
+F10 "logic_inB1" I L 1700 5425 50 
+F11 "outB+" I R 2900 4900 50 
+F12 "outB-" I R 2900 5025 50 
+F13 "i_mtrB" I R 2900 5425 50 
+$EndSheet
+Wire Wire Line
+	1700 4800 1625 4800
+Text GLabel 1625 4800 0    50   Input ~ 0
+mtr1_pwmB
+Text GLabel 1625 5275 0    50   Input ~ 0
+mtr1_inB0
+Wire Wire Line
+	1700 5275 1625 5275
+Text GLabel 1625 5425 0    50   Input ~ 0
+mtr1_inB1
+Wire Wire Line
+	1700 5425 1625 5425
+Text GLabel 2975 4900 2    50   Input ~ 0
+mtr1B+
+Text GLabel 2975 5025 2    50   Input ~ 0
+mtr1B-
+Wire Wire Line
+	2900 5025 2975 5025
+Wire Wire Line
+	2900 4900 2975 4900
+Text GLabel 2975 5425 2    50   Input ~ 0
+i_mtr1B
+Wire Wire Line
+	2900 5425 2975 5425
+Wire Notes Line
+	4150 3250 11225 3250
+$EndSCHEMATC

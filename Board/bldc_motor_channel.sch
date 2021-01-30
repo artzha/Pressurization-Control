@@ -1,0 +1,815 @@
+EESchema Schematic File Version 4
+EELAYER 30 0
+EELAYER END
+$Descr A4 11693 8268
+encoding utf-8
+Sheet 23 25
+Title "Pressurization Board Series 1"
+Date "2020-08-17"
+Rev "Rev A"
+Comp "Michigan Aeronautical Science Association (MASA)"
+Comment1 "Josh Azrin & Arthur Zhang"
+Comment2 ""
+Comment3 ""
+Comment4 ""
+$EndDescr
+$Comp
+L pressurization_series1-rescue:TestPoint-Connector TP?
+U 1 1 5ECFFF8A
+P 8325 2950
+AR Path="/5E49EA18/5E507A5C/5ECFFF8A" Ref="TP?"  Part="1" 
+AR Path="/5E49EA18/5E9A6A8E/5ECFFF8A" Ref="TP15"  Part="1" 
+AR Path="/5E49EA18/5E9A6A99/5ECFFF8A" Ref="TP21"  Part="1" 
+F 0 "TP21" V 8279 3138 50  0000 L CNN
+F 1 "TestPoint" V 8370 3138 50  0000 L CNN
+F 2 "libs:TestPoint-EC3" H 8525 2950 50  0001 C CNN
+F 3 "~" H 8525 2950 50  0001 C CNN
+	1    8325 2950
+	0    1    1    0   
+$EndComp
+$Comp
+L pressurization_series1-rescue:TestPoint-Connector TP?
+U 1 1 5ECFFF90
+P 8325 3275
+AR Path="/5E49EA18/5E507A5C/5ECFFF90" Ref="TP?"  Part="1" 
+AR Path="/5E49EA18/5E9A6A8E/5ECFFF90" Ref="TP16"  Part="1" 
+AR Path="/5E49EA18/5E9A6A99/5ECFFF90" Ref="TP22"  Part="1" 
+F 0 "TP22" V 8279 3463 50  0000 L CNN
+F 1 "TestPoint" V 8370 3463 50  0000 L CNN
+F 2 "libs:TestPoint-EC3" H 8525 3275 50  0001 C CNN
+F 3 "~" H 8525 3275 50  0001 C CNN
+	1    8325 3275
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	8325 2950 8200 2950
+Wire Wire Line
+	8325 3275 8200 3275
+Text HLabel 8200 2950 0    50   Input ~ 0
+logic_in0
+Text HLabel 8200 3275 0    50   Input ~ 0
+logic_in1
+$Comp
+L pressurization_series1-rescue:TestPoint-Connector TP?
+U 1 1 5ECFFF9A
+P 8325 3575
+AR Path="/5E49EA18/5E507A5C/5ECFFF9A" Ref="TP?"  Part="1" 
+AR Path="/5E49EA18/5E9A6A8E/5ECFFF9A" Ref="TP17"  Part="1" 
+AR Path="/5E49EA18/5E9A6A99/5ECFFF9A" Ref="TP23"  Part="1" 
+F 0 "TP23" V 8279 3763 50  0000 L CNN
+F 1 "TestPoint" V 8370 3763 50  0000 L CNN
+F 2 "libs:TestPoint-EC3" H 8525 3575 50  0001 C CNN
+F 3 "~" H 8525 3575 50  0001 C CNN
+	1    8325 3575
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	8325 3575 8200 3575
+Text HLabel 8200 3575 0    50   Input ~ 0
+logic_in2
+$Comp
+L pressurization_series1-rescue:TestPoint-Connector TP?
+U 1 1 5ED0241F
+P 8325 3875
+AR Path="/5E49EA18/5E507A5C/5ED0241F" Ref="TP?"  Part="1" 
+AR Path="/5E49EA18/5E9A6A8E/5ED0241F" Ref="TP18"  Part="1" 
+AR Path="/5E49EA18/5E9A6A99/5ED0241F" Ref="TP24"  Part="1" 
+F 0 "TP24" V 8279 4063 50  0000 L CNN
+F 1 "TestPoint" V 8370 4063 50  0000 L CNN
+F 2 "libs:TestPoint-EC3" H 8525 3875 50  0001 C CNN
+F 3 "~" H 8525 3875 50  0001 C CNN
+	1    8325 3875
+	0    1    1    0   
+$EndComp
+$Comp
+L pressurization_series1-rescue:TestPoint-Connector TP?
+U 1 1 5ED02425
+P 8325 4200
+AR Path="/5E49EA18/5E507A5C/5ED02425" Ref="TP?"  Part="1" 
+AR Path="/5E49EA18/5E9A6A8E/5ED02425" Ref="TP19"  Part="1" 
+AR Path="/5E49EA18/5E9A6A99/5ED02425" Ref="TP25"  Part="1" 
+F 0 "TP25" V 8279 4388 50  0000 L CNN
+F 1 "TestPoint" V 8370 4388 50  0000 L CNN
+F 2 "libs:TestPoint-EC3" H 8525 4200 50  0001 C CNN
+F 3 "~" H 8525 4200 50  0001 C CNN
+	1    8325 4200
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	8325 3875 8200 3875
+Wire Wire Line
+	8325 4200 8200 4200
+Text HLabel 8200 3875 0    50   Input ~ 0
+pwm_en0
+Text HLabel 8200 4200 0    50   Input ~ 0
+pwm_en1
+$Comp
+L pressurization_series1-rescue:TestPoint-Connector TP?
+U 1 1 5ED0242F
+P 8325 4500
+AR Path="/5E49EA18/5E507A5C/5ED0242F" Ref="TP?"  Part="1" 
+AR Path="/5E49EA18/5E9A6A8E/5ED0242F" Ref="TP20"  Part="1" 
+AR Path="/5E49EA18/5E9A6A99/5ED0242F" Ref="TP26"  Part="1" 
+F 0 "TP26" V 8279 4688 50  0000 L CNN
+F 1 "TestPoint" V 8370 4688 50  0000 L CNN
+F 2 "libs:TestPoint-EC3" H 8525 4500 50  0001 C CNN
+F 3 "~" H 8525 4500 50  0001 C CNN
+	1    8325 4500
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	8325 4500 8200 4500
+Text HLabel 8200 4500 0    50   Input ~ 0
+pwm_en2
+Wire Wire Line
+	3675 4000 3675 4225
+Wire Wire Line
+	4625 3825 4675 3825
+Wire Wire Line
+	2200 2800 2325 2800
+Text HLabel 2200 2800 0    50   Input ~ 0
+pwm_en1
+Text Notes 1975 5725 0    50   ~ 0
+Brushless DC motor is driven by a triple half H bridge IC (L6234). \n5A max pulsed current.\nINx pins toggle wether the high side or low side mosfets of a half bridge are on. \nA logic HIGH switches the high side mosfet on, a logic LOW switches the low side mosfet on.\nENx pins enable/disable individual half bridges.\nA logic HIGH enables the channel and a logic LOW disables the channel by switching power off.\nOUTx should be fed as inputs into 3 phase motor.
+Text HLabel 2200 3500 0    50   Input ~ 0
+mtr_outc
+Text HLabel 2200 3400 0    50   Input ~ 0
+mtr_outb
+Text HLabel 2200 3300 0    50   Input ~ 0
+mtr_outa
+Text HLabel 2200 2900 0    50   Input ~ 0
+pwm_en2
+Text HLabel 2200 2700 0    50   Input ~ 0
+pwm_en0
+Text HLabel 2200 3200 0    50   Input ~ 0
+logic_in2
+Text HLabel 2200 3100 0    50   Input ~ 0
+logic_in1
+Text HLabel 2200 3000 0    50   Input ~ 0
+logic_in0
+Wire Wire Line
+	4025 3200 4500 3200
+Connection ~ 4025 2850
+Wire Wire Line
+	4025 2850 4500 2850
+Wire Wire Line
+	4925 2850 5325 2850
+Wire Wire Line
+	5325 2850 5325 2875
+Wire Wire Line
+	5325 3175 5325 3250
+Wire Wire Line
+	4925 3175 4925 3250
+Connection ~ 4925 2850
+Wire Wire Line
+	4925 2850 4925 2875
+$Comp
+L pressurization_series1-rescue:C-Device C?
+U 1 1 5E9829F5
+P 4925 3025
+AR Path="/5E9356D9/5E935810/5E9829F5" Ref="C?"  Part="1" 
+AR Path="/5E9356D9/5E9A3BCC/5E9829F5" Ref="C?"  Part="1" 
+AR Path="/5E49EA18/5E9A6A8E/5E9829F5" Ref="C48"  Part="1" 
+AR Path="/5E49EA18/5E9A6A99/5E9829F5" Ref="C54"  Part="1" 
+AR Path="/5E49EA18/5E99D32D/5E9829F5" Ref="C?"  Part="1" 
+F 0 "C54" H 5040 3071 50  0000 L CNN
+F 1 "0.1u" H 5040 2980 50  0000 L CNN
+F 2 "KiCad:C_0603_1608Metric" H 4963 2875 50  0001 C CNN
+F 3 "~" H 4925 3025 50  0001 C CNN
+	1    4925 3025
+	1    0    0    -1  
+$EndComp
+Connection ~ 4500 2850
+Wire Wire Line
+	4500 2850 4925 2850
+Wire Wire Line
+	4500 2850 4500 2875
+Wire Wire Line
+	4500 3200 4500 3175
+$Comp
+L pressurization_series1-rescue:C-Device C?
+U 1 1 5E97EB2D
+P 4500 3025
+AR Path="/5E9356D9/5E935810/5E97EB2D" Ref="C?"  Part="1" 
+AR Path="/5E9356D9/5E9A3BCC/5E97EB2D" Ref="C?"  Part="1" 
+AR Path="/5E49EA18/5E9A6A8E/5E97EB2D" Ref="C47"  Part="1" 
+AR Path="/5E49EA18/5E9A6A99/5E97EB2D" Ref="C53"  Part="1" 
+AR Path="/5E49EA18/5E99D32D/5E97EB2D" Ref="C?"  Part="1" 
+F 0 "C53" H 4615 3071 50  0000 L CNN
+F 1 "0.22u" H 4615 2980 50  0000 L CNN
+F 2 "KiCad:C_0603_1608Metric" H 4538 2875 50  0001 C CNN
+F 3 "~" H 4500 3025 50  0001 C CNN
+	1    4500 3025
+	1    0    0    -1  
+$EndComp
+Connection ~ 4025 3200
+Wire Wire Line
+	4025 3175 4025 3200
+Wire Wire Line
+	3650 2850 4025 2850
+Wire Wire Line
+	4025 2850 4025 2875
+Wire Wire Line
+	3525 3550 4025 3550
+Wire Wire Line
+	4025 3550 4025 3525
+Wire Wire Line
+	4025 3200 4025 3225
+Wire Wire Line
+	3950 3200 4025 3200
+Connection ~ 3650 2850
+$Comp
+L pressurization_series1-rescue:D-Device D?
+U 1 1 5E96FE58
+P 4025 3025
+AR Path="/5E9356D9/5E935810/5E96FE58" Ref="D?"  Part="1" 
+AR Path="/5E9356D9/5E9A3BCC/5E96FE58" Ref="D?"  Part="1" 
+AR Path="/5E49EA18/5E9A6A8E/5E96FE58" Ref="D17"  Part="1" 
+AR Path="/5E49EA18/5E9A6A99/5E96FE58" Ref="D22"  Part="1" 
+AR Path="/5E49EA18/5E99D32D/5E96FE58" Ref="D?"  Part="1" 
+F 0 "D22" V 4071 2946 50  0000 R CNN
+F 1 "1n4148" V 3975 2950 50  0000 R CNN
+F 2 "KiCad:D_SOD-123" H 4025 3025 50  0001 C CNN
+F 3 "~" H 4025 3025 50  0001 C CNN
+	1    4025 3025
+	0    -1   -1   0   
+$EndComp
+$Comp
+L pressurization_series1-rescue:D-Device D?
+U 1 1 5E96E67B
+P 4025 3375
+AR Path="/5E9356D9/5E935810/5E96E67B" Ref="D?"  Part="1" 
+AR Path="/5E9356D9/5E9A3BCC/5E96E67B" Ref="D?"  Part="1" 
+AR Path="/5E49EA18/5E9A6A8E/5E96E67B" Ref="D18"  Part="1" 
+AR Path="/5E49EA18/5E9A6A99/5E96E67B" Ref="D23"  Part="1" 
+AR Path="/5E49EA18/5E99D32D/5E96E67B" Ref="D?"  Part="1" 
+F 0 "D23" V 4071 3296 50  0000 R CNN
+F 1 "1n4148" V 3980 3296 50  0000 R CNN
+F 2 "KiCad:D_SOD-123" H 4025 3375 50  0001 C CNN
+F 3 "~" H 4025 3375 50  0001 C CNN
+	1    4025 3375
+	0    -1   -1   0   
+$EndComp
+$Comp
+L pressurization_series1-rescue:C-Device C?
+U 1 1 5E96A8A7
+P 3800 3200
+AR Path="/5E9356D9/5E935810/5E96A8A7" Ref="C?"  Part="1" 
+AR Path="/5E9356D9/5E9A3BCC/5E96A8A7" Ref="C?"  Part="1" 
+AR Path="/5E49EA18/5E9A6A8E/5E96A8A7" Ref="C46"  Part="1" 
+AR Path="/5E49EA18/5E9A6A99/5E96A8A7" Ref="C52"  Part="1" 
+AR Path="/5E49EA18/5E99D32D/5E96A8A7" Ref="C?"  Part="1" 
+F 0 "C52" V 3675 3200 50  0000 C CNN
+F 1 "10n" V 3925 3200 50  0000 C CNN
+F 2 "KiCad:C_0603_1608Metric" H 3838 3050 50  0001 C CNN
+F 3 "~" H 3800 3200 50  0001 C CNN
+	1    3800 3200
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	2200 2900 2325 2900
+Wire Wire Line
+	2200 2700 2325 2700
+Wire Wire Line
+	2200 3200 2325 3200
+Wire Wire Line
+	2200 3100 2325 3100
+Wire Wire Line
+	2200 3000 2325 3000
+Wire Wire Line
+	4175 3850 4175 4000
+Connection ~ 4175 3850
+Wire Wire Line
+	3525 3200 3650 3200
+Wire Wire Line
+	3650 2850 3650 2750
+Wire Wire Line
+	3525 2850 3650 2850
+Wire Wire Line
+	3525 2750 3650 2750
+Wire Wire Line
+	2200 3500 2325 3500
+Wire Wire Line
+	2200 3400 2325 3400
+Wire Wire Line
+	2200 3300 2325 3300
+Wire Wire Line
+	4175 3750 4175 3850
+Wire Wire Line
+	3525 3850 4175 3850
+Wire Wire Line
+	3525 3750 4175 3750
+$Comp
+L pressurization_series1-rescue:GNDPWR-power #PWR?
+U 1 1 5E945355
+P 4175 4825
+AR Path="/5E49EA18/5E507A5C/5E945355" Ref="#PWR?"  Part="1" 
+AR Path="/5E49EA18/5E6EF1BC/5E945355" Ref="#PWR?"  Part="1" 
+AR Path="/5E9356D9/5E935810/5E945355" Ref="#PWR?"  Part="1" 
+AR Path="/5E9356D9/5E9A3BCC/5E945355" Ref="#PWR?"  Part="1" 
+AR Path="/5E49EA18/5E9A6A8E/5E945355" Ref="#PWR0203"  Part="1" 
+AR Path="/5E49EA18/5E9A6A99/5E945355" Ref="#PWR0215"  Part="1" 
+AR Path="/5E49EA18/5E99D32D/5E945355" Ref="#PWR?"  Part="1" 
+F 0 "#PWR0215" H 4175 4625 50  0001 C CNN
+F 1 "GNDPWR" H 4179 4671 50  0000 C CNN
+F 2 "" H 4175 4775 50  0001 C CNN
+F 3 "" H 4175 4775 50  0001 C CNN
+	1    4175 4825
+	1    0    0    -1  
+$EndComp
+Connection ~ 4175 4000
+Wire Wire Line
+	4400 4000 4175 4000
+Wire Wire Line
+	4400 4175 4400 4000
+Wire Wire Line
+	5525 4025 5525 4300
+Wire Wire Line
+	5525 4300 4175 4300
+Wire Wire Line
+	4675 4175 4400 4175
+Wire Wire Line
+	4675 4025 4675 4175
+Wire Wire Line
+	4675 3925 4525 3925
+$Comp
+L pressurization_series1-rescue:GND-power #PWR?
+U 1 1 5E945340
+P 4525 3925
+AR Path="/5E49EA18/5E507A5C/5E945340" Ref="#PWR?"  Part="1" 
+AR Path="/5E49EA18/5E6AD26A/5E945340" Ref="#PWR?"  Part="1" 
+AR Path="/5E49EA18/5E6EF1BC/5E945340" Ref="#PWR?"  Part="1" 
+AR Path="/5E9356D9/5E935810/5E945340" Ref="#PWR?"  Part="1" 
+AR Path="/5E9356D9/5E9A3BCC/5E945340" Ref="#PWR?"  Part="1" 
+AR Path="/5E49EA18/5E9A6A8E/5E945340" Ref="#PWR0204"  Part="1" 
+AR Path="/5E49EA18/5E9A6A99/5E945340" Ref="#PWR0216"  Part="1" 
+AR Path="/5E49EA18/5E99D32D/5E945340" Ref="#PWR?"  Part="1" 
+F 0 "#PWR0216" H 4525 3675 50  0001 C CNN
+F 1 "GND" H 4530 3752 50  0000 C CNN
+F 2 "" H 4525 3925 50  0001 C CNN
+F 3 "" H 4525 3925 50  0001 C CNN
+	1    4525 3925
+	1    0    0    -1  
+$EndComp
+$Comp
+L pressurization_series1-rescue:GND-power #PWR?
+U 1 1 5E945334
+P 5700 3975
+AR Path="/5E49EA18/5E507A5C/5E945334" Ref="#PWR?"  Part="1" 
+AR Path="/5E49EA18/5E6AD26A/5E945334" Ref="#PWR?"  Part="1" 
+AR Path="/5E49EA18/5E6EF1BC/5E945334" Ref="#PWR?"  Part="1" 
+AR Path="/5E9356D9/5E935810/5E945334" Ref="#PWR?"  Part="1" 
+AR Path="/5E9356D9/5E9A3BCC/5E945334" Ref="#PWR?"  Part="1" 
+AR Path="/5E49EA18/5E9A6A8E/5E945334" Ref="#PWR0208"  Part="1" 
+AR Path="/5E49EA18/5E9A6A99/5E945334" Ref="#PWR0220"  Part="1" 
+AR Path="/5E49EA18/5E99D32D/5E945334" Ref="#PWR?"  Part="1" 
+F 0 "#PWR0220" H 5700 3725 50  0001 C CNN
+F 1 "GND" H 5705 3802 50  0000 C CNN
+F 2 "" H 5700 3975 50  0001 C CNN
+F 3 "" H 5700 3975 50  0001 C CNN
+	1    5700 3975
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	5525 3925 5700 3925
+Wire Wire Line
+	5525 3825 5700 3825
+$Comp
+L pressurization_series1:INA181AX U?
+U 1 1 5E94532C
+P 5125 3925
+AR Path="/5E49EA18/5E507A5C/5E94532C" Ref="U?"  Part="1" 
+AR Path="/5E49EA18/5E6AD26A/5E94532C" Ref="U?"  Part="1" 
+AR Path="/5E49EA18/5E6EF1BC/5E94532C" Ref="U?"  Part="1" 
+AR Path="/5E9356D9/5E935810/5E94532C" Ref="U?"  Part="1" 
+AR Path="/5E9356D9/5E9A3BCC/5E94532C" Ref="U?"  Part="1" 
+AR Path="/5E49EA18/5E9A6A8E/5E94532C" Ref="U19"  Part="1" 
+AR Path="/5E49EA18/5E9A6A99/5E94532C" Ref="U21"  Part="1" 
+AR Path="/5E49EA18/5E99D32D/5E94532C" Ref="U?"  Part="1" 
+AR Path="/5E94532C" Ref="U?"  Part="1" 
+F 0 "U21" H 5100 4288 49  0000 C CNN
+F 1 "INA181AX" H 5100 4198 49  0000 C CNN
+F 2 "KiCad:SOT-23-6" H 4675 4225 49  0001 C CNN
+F 3 "" H 4675 4225 49  0001 C CNN
+	1    5125 3925
+	1    0    0    -1  
+$EndComp
+Text HLabel 4625 3825 0    50   Input ~ 0
+i_mtr
+$Comp
+L pressurization_series1-rescue:R-Device R?
+U 1 1 5E945323
+P 4175 4150
+AR Path="/5E49EA18/5E507A5C/5E945323" Ref="R?"  Part="1" 
+AR Path="/5E49EA18/5E6AD26A/5E945323" Ref="R?"  Part="1" 
+AR Path="/5E49EA18/5E6EF1BC/5E945323" Ref="R?"  Part="1" 
+AR Path="/5E9356D9/5E935810/5E945323" Ref="R?"  Part="1" 
+AR Path="/5E9356D9/5E9A3BCC/5E945323" Ref="R?"  Part="1" 
+AR Path="/5E49EA18/5E9A6A8E/5E945323" Ref="R119"  Part="1" 
+AR Path="/5E49EA18/5E9A6A99/5E945323" Ref="R123"  Part="1" 
+AR Path="/5E49EA18/5E99D32D/5E945323" Ref="R?"  Part="1" 
+F 0 "R123" V 4075 4150 50  0000 C CNN
+F 1 "5m" V 4175 4150 50  0000 C CNN
+F 2 "KiCad:R_1206_3216Metric" V 4105 4150 50  0001 C CNN
+F 3 "~" H 4175 4150 50  0001 C CNN
+	1    4175 4150
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	2225 4000 2225 4475
+Wire Wire Line
+	3525 4000 3675 4000
+$Comp
+L pressurization_series1-rescue:GND-power #PWR?
+U 1 1 5E93E4D1
+P 3675 4600
+AR Path="/5E9356D9/5E935810/5E93E4D1" Ref="#PWR?"  Part="1" 
+AR Path="/5E9356D9/5E9A3BCC/5E93E4D1" Ref="#PWR?"  Part="1" 
+AR Path="/5E49EA18/5E9A6A8E/5E93E4D1" Ref="#PWR0202"  Part="1" 
+AR Path="/5E49EA18/5E9A6A99/5E93E4D1" Ref="#PWR0214"  Part="1" 
+AR Path="/5E49EA18/5E99D32D/5E93E4D1" Ref="#PWR?"  Part="1" 
+F 0 "#PWR0214" H 3675 4350 50  0001 C CNN
+F 1 "GND" H 3680 4427 50  0000 C CNN
+F 2 "" H 3675 4600 50  0001 C CNN
+F 3 "" H 3675 4600 50  0001 C CNN
+	1    3675 4600
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	3675 4525 3675 4600
+$Comp
+L pressurization_series1-rescue:C-Device C?
+U 1 1 5E93DB32
+P 3675 4375
+AR Path="/5E9356D9/5E935810/5E93DB32" Ref="C?"  Part="1" 
+AR Path="/5E9356D9/5E9A3BCC/5E93DB32" Ref="C?"  Part="1" 
+AR Path="/5E49EA18/5E9A6A8E/5E93DB32" Ref="C45"  Part="1" 
+AR Path="/5E49EA18/5E9A6A99/5E93DB32" Ref="C51"  Part="1" 
+AR Path="/5E49EA18/5E99D32D/5E93DB32" Ref="C?"  Part="1" 
+F 0 "C51" H 3790 4421 50  0000 L CNN
+F 1 "1u" H 3790 4330 50  0000 L CNN
+F 2 "KiCad:C_0805_2012Metric" H 3713 4225 50  0001 C CNN
+F 3 "~" H 3675 4375 50  0001 C CNN
+	1    3675 4375
+	1    0    0    -1  
+$EndComp
+Connection ~ 2225 4000
+Wire Wire Line
+	2325 4000 2225 4000
+$Comp
+L pressurization_series1-rescue:GND-power #PWR?
+U 1 1 5E939D36
+P 2225 4475
+AR Path="/5E9356D9/5E935810/5E939D36" Ref="#PWR?"  Part="1" 
+AR Path="/5E9356D9/5E9A3BCC/5E939D36" Ref="#PWR?"  Part="1" 
+AR Path="/5E49EA18/5E9A6A8E/5E939D36" Ref="#PWR0200"  Part="1" 
+AR Path="/5E49EA18/5E9A6A99/5E939D36" Ref="#PWR0212"  Part="1" 
+AR Path="/5E49EA18/5E99D32D/5E939D36" Ref="#PWR?"  Part="1" 
+F 0 "#PWR0212" H 2225 4225 50  0001 C CNN
+F 1 "GND" H 2230 4302 50  0000 C CNN
+F 2 "" H 2225 4475 50  0001 C CNN
+F 3 "" H 2225 4475 50  0001 C CNN
+	1    2225 4475
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	2225 3900 2225 4000
+Connection ~ 2225 3900
+Wire Wire Line
+	2225 3800 2225 3900
+Connection ~ 2225 3800
+Wire Wire Line
+	2225 3700 2225 3800
+Connection ~ 2225 3700
+Wire Wire Line
+	2225 3600 2225 3700
+Wire Wire Line
+	2325 3900 2225 3900
+Wire Wire Line
+	2325 3800 2225 3800
+Wire Wire Line
+	2325 3700 2225 3700
+Wire Wire Line
+	2325 3600 2225 3600
+Text Notes 5800 3875 0    50   ~ 0
+Motor current sense\n
+Text Notes 625  800  0    123  ~ 25
+Brushless Motor Channel
+$Comp
+L pressurization_series1-rescue:CP1-Device C49
+U 1 1 605CCF85
+P 5325 3025
+AR Path="/5E49EA18/5E9A6A8E/605CCF85" Ref="C49"  Part="1" 
+AR Path="/5E49EA18/5E9A6A99/605CCF85" Ref="C55"  Part="1" 
+F 0 "C55" H 5440 3071 50  0000 L CNN
+F 1 "100u" H 5440 2980 50  0000 L CNN
+F 2 "KiCad:CP_Radial_D5.0mm_P2.00mm" H 5325 3025 50  0001 C CNN
+F 3 "~" H 5325 3025 50  0001 C CNN
+	1    5325 3025
+	1    0    0    -1  
+$EndComp
+$Comp
+L pressurization_series1-rescue:C-Device C?
+U 1 1 5EBDB641
+P 6875 3925
+AR Path="/5966DBAF/59682A18/5EBDB641" Ref="C?"  Part="1" 
+AR Path="/5966DBAF/59682EC7/5EBDB641" Ref="C?"  Part="1" 
+AR Path="/5966DBAF/59682FAF/5EBDB641" Ref="C?"  Part="1" 
+AR Path="/5966DBAF/5968371C/5EBDB641" Ref="C?"  Part="1" 
+AR Path="/5966DBAF/59683D69/5EBDB641" Ref="C?"  Part="1" 
+AR Path="/5966DBAF/59683D77/5EBDB641" Ref="C?"  Part="1" 
+AR Path="/5966DBAF/59683D85/5EBDB641" Ref="C?"  Part="1" 
+AR Path="/5966DBAF/59683D93/5EBDB641" Ref="C?"  Part="1" 
+AR Path="/5966DBAF/5969CC59/5EBDB641" Ref="C?"  Part="1" 
+AR Path="/5966DBAF/5969CC67/5EBDB641" Ref="C?"  Part="1" 
+AR Path="/5966DBAF/5969CC75/5EBDB641" Ref="C?"  Part="1" 
+AR Path="/5966DBAF/5969CC83/5EBDB641" Ref="C?"  Part="1" 
+AR Path="/5966DBAF/5969CC91/5EBDB641" Ref="C?"  Part="1" 
+AR Path="/5966DBAF/5969CC9F/5EBDB641" Ref="C?"  Part="1" 
+AR Path="/5966DBAF/5969CCAD/5EBDB641" Ref="C?"  Part="1" 
+AR Path="/5966DBAF/5969CCBB/5EBDB641" Ref="C?"  Part="1" 
+AR Path="/5966DBAF/5BBB8B0C/5EBDB641" Ref="C?"  Part="1" 
+AR Path="/5966DBAF/5BBB8B22/5EBDB641" Ref="C?"  Part="1" 
+AR Path="/5966DBAF/5BBB8B38/5EBDB641" Ref="C?"  Part="1" 
+AR Path="/5966DBAF/5BBB8B4E/5EBDB641" Ref="C?"  Part="1" 
+AR Path="/5966DBAF/5BBB8B64/5EBDB641" Ref="C?"  Part="1" 
+AR Path="/5966DBAF/5BBB8B7A/5EBDB641" Ref="C?"  Part="1" 
+AR Path="/5966DBAF/5BBB8B90/5EBDB641" Ref="C?"  Part="1" 
+AR Path="/5966DBAF/5BBB8BA6/5EBDB641" Ref="C?"  Part="1" 
+AR Path="/5966DBAF/5BBBA808/5EBDB641" Ref="C?"  Part="1" 
+AR Path="/5966DBAF/5BBBA81E/5EBDB641" Ref="C?"  Part="1" 
+AR Path="/5966DBAF/5BBBA834/5EBDB641" Ref="C?"  Part="1" 
+AR Path="/5966DBAF/5BBBA84A/5EBDB641" Ref="C?"  Part="1" 
+AR Path="/5966DBAF/5BBBA860/5EBDB641" Ref="C?"  Part="1" 
+AR Path="/5966DBAF/5BBBA876/5EBDB641" Ref="C?"  Part="1" 
+AR Path="/5966DBAF/5BBBA88C/5EBDB641" Ref="C?"  Part="1" 
+AR Path="/5966DBAF/5BBBA8A2/5EBDB641" Ref="C?"  Part="1" 
+AR Path="/5966DBAF/5BBBBDFC/5EBDB641" Ref="C?"  Part="1" 
+AR Path="/5966DBAF/5BBBBE12/5EBDB641" Ref="C?"  Part="1" 
+AR Path="/5966DBAF/5BBBBE28/5EBDB641" Ref="C?"  Part="1" 
+AR Path="/5966DBAF/5BBBBE3E/5EBDB641" Ref="C?"  Part="1" 
+AR Path="/5966DBAF/5BBBBE54/5EBDB641" Ref="C?"  Part="1" 
+AR Path="/5966DBAF/5BBBBE6A/5EBDB641" Ref="C?"  Part="1" 
+AR Path="/5966DBAF/5BBBBE80/5EBDB641" Ref="C?"  Part="1" 
+AR Path="/5966DBAF/5BBBBE96/5EBDB641" Ref="C?"  Part="1" 
+AR Path="/5E506090/5EBDB641" Ref="C?"  Part="1" 
+AR Path="/5E50626D/5EBDB641" Ref="C?"  Part="1" 
+AR Path="/5E50629A/5EBDB641" Ref="C?"  Part="1" 
+AR Path="/5E49E833/5E506090/5EBDB641" Ref="C?"  Part="1" 
+AR Path="/5E49E833/5E506A1D/5EBDB641" Ref="C?"  Part="1" 
+AR Path="/5E63996E/5E506090/5EBDB641" Ref="C?"  Part="1" 
+AR Path="/5E63996E/5E506A1D/5EBDB641" Ref="C?"  Part="1" 
+AR Path="/5E49E833/5E98B2B3/5EBDB641" Ref="C?"  Part="1" 
+AR Path="/5E49E833/5E98B969/5EBDB641" Ref="C?"  Part="1" 
+AR Path="/5E49E833/5E991864/5EBDB641" Ref="C?"  Part="1" 
+AR Path="/5E49E833/5E99186B/5EBDB641" Ref="C?"  Part="1" 
+AR Path="/5E49E833/5E991884/5EBDB641" Ref="C?"  Part="1" 
+AR Path="/5E49E833/5E991890/5EBDB641" Ref="C?"  Part="1" 
+AR Path="/5E49E833/5E991F74/5EBDB641" Ref="C?"  Part="1" 
+AR Path="/5E49EA18/5E9A6A8E/5EBDB641" Ref="C50"  Part="1" 
+AR Path="/5E49EA18/5E9A6A99/5EBDB641" Ref="C56"  Part="1" 
+F 0 "C56" H 6900 4025 50  0000 L CNN
+F 1 "100n" H 6900 3825 50  0000 L CNN
+F 2 "KiCad:C_0603_1608Metric" H 6913 3775 50  0001 C CNN
+F 3 "" H 6875 3925 50  0001 C CNN
+	1    6875 3925
+	1    0    0    -1  
+$EndComp
+$Comp
+L pressurization_series1-rescue:+3.3V-power #PWR?
+U 1 1 5EBDB647
+P 6875 3725
+AR Path="/5966DBAF/59682A18/5EBDB647" Ref="#PWR?"  Part="1" 
+AR Path="/5966DBAF/59682FAF/5EBDB647" Ref="#PWR?"  Part="1" 
+AR Path="/5966DBAF/5969CC75/5EBDB647" Ref="#PWR?"  Part="1" 
+AR Path="/5966DBAF/59682EC7/5EBDB647" Ref="#PWR?"  Part="1" 
+AR Path="/5966DBAF/5968371C/5EBDB647" Ref="#PWR?"  Part="1" 
+AR Path="/5966DBAF/59683D69/5EBDB647" Ref="#PWR?"  Part="1" 
+AR Path="/5966DBAF/59683D77/5EBDB647" Ref="#PWR?"  Part="1" 
+AR Path="/5966DBAF/59683D85/5EBDB647" Ref="#PWR?"  Part="1" 
+AR Path="/5966DBAF/59683D93/5EBDB647" Ref="#PWR?"  Part="1" 
+AR Path="/5966DBAF/5969CC59/5EBDB647" Ref="#PWR?"  Part="1" 
+AR Path="/5966DBAF/5969CC67/5EBDB647" Ref="#PWR?"  Part="1" 
+AR Path="/5966DBAF/5969CC83/5EBDB647" Ref="#PWR?"  Part="1" 
+AR Path="/5966DBAF/5969CC91/5EBDB647" Ref="#PWR?"  Part="1" 
+AR Path="/5966DBAF/5969CC9F/5EBDB647" Ref="#PWR?"  Part="1" 
+AR Path="/5966DBAF/5969CCAD/5EBDB647" Ref="#PWR?"  Part="1" 
+AR Path="/5966DBAF/5969CCBB/5EBDB647" Ref="#PWR?"  Part="1" 
+AR Path="/5966DBAF/5BBB8B0C/5EBDB647" Ref="#PWR?"  Part="1" 
+AR Path="/5966DBAF/5BBB8B22/5EBDB647" Ref="#PWR?"  Part="1" 
+AR Path="/5966DBAF/5BBB8B38/5EBDB647" Ref="#PWR?"  Part="1" 
+AR Path="/5966DBAF/5BBB8B4E/5EBDB647" Ref="#PWR?"  Part="1" 
+AR Path="/5966DBAF/5BBB8B64/5EBDB647" Ref="#PWR?"  Part="1" 
+AR Path="/5966DBAF/5BBB8B7A/5EBDB647" Ref="#PWR?"  Part="1" 
+AR Path="/5966DBAF/5BBB8B90/5EBDB647" Ref="#PWR?"  Part="1" 
+AR Path="/5966DBAF/5BBB8BA6/5EBDB647" Ref="#PWR?"  Part="1" 
+AR Path="/5966DBAF/5BBBA808/5EBDB647" Ref="#PWR?"  Part="1" 
+AR Path="/5966DBAF/5BBBA81E/5EBDB647" Ref="#PWR?"  Part="1" 
+AR Path="/5966DBAF/5BBBA834/5EBDB647" Ref="#PWR?"  Part="1" 
+AR Path="/5966DBAF/5BBBA84A/5EBDB647" Ref="#PWR?"  Part="1" 
+AR Path="/5966DBAF/5BBBA860/5EBDB647" Ref="#PWR?"  Part="1" 
+AR Path="/5966DBAF/5BBBA876/5EBDB647" Ref="#PWR?"  Part="1" 
+AR Path="/5966DBAF/5BBBA88C/5EBDB647" Ref="#PWR?"  Part="1" 
+AR Path="/5966DBAF/5BBBA8A2/5EBDB647" Ref="#PWR?"  Part="1" 
+AR Path="/5966DBAF/5BBBBDFC/5EBDB647" Ref="#PWR?"  Part="1" 
+AR Path="/5966DBAF/5BBBBE12/5EBDB647" Ref="#PWR?"  Part="1" 
+AR Path="/5966DBAF/5BBBBE28/5EBDB647" Ref="#PWR?"  Part="1" 
+AR Path="/5966DBAF/5BBBBE3E/5EBDB647" Ref="#PWR?"  Part="1" 
+AR Path="/5966DBAF/5BBBBE54/5EBDB647" Ref="#PWR?"  Part="1" 
+AR Path="/5966DBAF/5BBBBE6A/5EBDB647" Ref="#PWR?"  Part="1" 
+AR Path="/5966DBAF/5BBBBE80/5EBDB647" Ref="#PWR?"  Part="1" 
+AR Path="/5966DBAF/5BBBBE96/5EBDB647" Ref="#PWR?"  Part="1" 
+AR Path="/5E506090/5EBDB647" Ref="#PWR?"  Part="1" 
+AR Path="/5E50626D/5EBDB647" Ref="#PWR?"  Part="1" 
+AR Path="/5E50629A/5EBDB647" Ref="#PWR?"  Part="1" 
+AR Path="/5E49E833/5E506090/5EBDB647" Ref="#PWR?"  Part="1" 
+AR Path="/5E49E833/5E506A1D/5EBDB647" Ref="#PWR?"  Part="1" 
+AR Path="/5E63996E/5E506090/5EBDB647" Ref="#PWR?"  Part="1" 
+AR Path="/5E63996E/5E506A1D/5EBDB647" Ref="#PWR?"  Part="1" 
+AR Path="/5E49E833/5E98B2B3/5EBDB647" Ref="#PWR?"  Part="1" 
+AR Path="/5E49E833/5E98B969/5EBDB647" Ref="#PWR?"  Part="1" 
+AR Path="/5E49E833/5E991864/5EBDB647" Ref="#PWR?"  Part="1" 
+AR Path="/5E49E833/5E99186B/5EBDB647" Ref="#PWR?"  Part="1" 
+AR Path="/5E49E833/5E991884/5EBDB647" Ref="#PWR?"  Part="1" 
+AR Path="/5E49E833/5E991890/5EBDB647" Ref="#PWR?"  Part="1" 
+AR Path="/5E49E833/5E991F74/5EBDB647" Ref="#PWR?"  Part="1" 
+AR Path="/5E49EA18/5E9A6A8E/5EBDB647" Ref="#PWR0209"  Part="1" 
+AR Path="/5E49EA18/5E9A6A99/5EBDB647" Ref="#PWR0221"  Part="1" 
+F 0 "#PWR0221" H 6875 3575 50  0001 C CNN
+F 1 "+3.3V" H 6875 3865 50  0000 C CNN
+F 2 "" H 6875 3725 50  0001 C CNN
+F 3 "" H 6875 3725 50  0001 C CNN
+	1    6875 3725
+	1    0    0    -1  
+$EndComp
+$Comp
+L pressurization_series1-rescue:GND-power #PWR?
+U 1 1 5EBDB64D
+P 6875 4125
+AR Path="/5966DBAF/59682A18/5EBDB64D" Ref="#PWR?"  Part="1" 
+AR Path="/5966DBAF/59682FAF/5EBDB64D" Ref="#PWR?"  Part="1" 
+AR Path="/5966DBAF/5969CC75/5EBDB64D" Ref="#PWR?"  Part="1" 
+AR Path="/5966DBAF/59682EC7/5EBDB64D" Ref="#PWR?"  Part="1" 
+AR Path="/5966DBAF/5968371C/5EBDB64D" Ref="#PWR?"  Part="1" 
+AR Path="/5966DBAF/59683D69/5EBDB64D" Ref="#PWR?"  Part="1" 
+AR Path="/5966DBAF/59683D77/5EBDB64D" Ref="#PWR?"  Part="1" 
+AR Path="/5966DBAF/59683D85/5EBDB64D" Ref="#PWR?"  Part="1" 
+AR Path="/5966DBAF/59683D93/5EBDB64D" Ref="#PWR?"  Part="1" 
+AR Path="/5966DBAF/5969CC59/5EBDB64D" Ref="#PWR?"  Part="1" 
+AR Path="/5966DBAF/5969CC67/5EBDB64D" Ref="#PWR?"  Part="1" 
+AR Path="/5966DBAF/5969CC83/5EBDB64D" Ref="#PWR?"  Part="1" 
+AR Path="/5966DBAF/5969CC91/5EBDB64D" Ref="#PWR?"  Part="1" 
+AR Path="/5966DBAF/5969CC9F/5EBDB64D" Ref="#PWR?"  Part="1" 
+AR Path="/5966DBAF/5969CCAD/5EBDB64D" Ref="#PWR?"  Part="1" 
+AR Path="/5966DBAF/5969CCBB/5EBDB64D" Ref="#PWR?"  Part="1" 
+AR Path="/5966DBAF/5BBB8B0C/5EBDB64D" Ref="#PWR?"  Part="1" 
+AR Path="/5966DBAF/5BBB8B22/5EBDB64D" Ref="#PWR?"  Part="1" 
+AR Path="/5966DBAF/5BBB8B38/5EBDB64D" Ref="#PWR?"  Part="1" 
+AR Path="/5966DBAF/5BBB8B4E/5EBDB64D" Ref="#PWR?"  Part="1" 
+AR Path="/5966DBAF/5BBB8B64/5EBDB64D" Ref="#PWR?"  Part="1" 
+AR Path="/5966DBAF/5BBB8B7A/5EBDB64D" Ref="#PWR?"  Part="1" 
+AR Path="/5966DBAF/5BBB8B90/5EBDB64D" Ref="#PWR?"  Part="1" 
+AR Path="/5966DBAF/5BBB8BA6/5EBDB64D" Ref="#PWR?"  Part="1" 
+AR Path="/5966DBAF/5BBBA808/5EBDB64D" Ref="#PWR?"  Part="1" 
+AR Path="/5966DBAF/5BBBA81E/5EBDB64D" Ref="#PWR?"  Part="1" 
+AR Path="/5966DBAF/5BBBA834/5EBDB64D" Ref="#PWR?"  Part="1" 
+AR Path="/5966DBAF/5BBBA84A/5EBDB64D" Ref="#PWR?"  Part="1" 
+AR Path="/5966DBAF/5BBBA860/5EBDB64D" Ref="#PWR?"  Part="1" 
+AR Path="/5966DBAF/5BBBA876/5EBDB64D" Ref="#PWR?"  Part="1" 
+AR Path="/5966DBAF/5BBBA88C/5EBDB64D" Ref="#PWR?"  Part="1" 
+AR Path="/5966DBAF/5BBBA8A2/5EBDB64D" Ref="#PWR?"  Part="1" 
+AR Path="/5966DBAF/5BBBBDFC/5EBDB64D" Ref="#PWR?"  Part="1" 
+AR Path="/5966DBAF/5BBBBE12/5EBDB64D" Ref="#PWR?"  Part="1" 
+AR Path="/5966DBAF/5BBBBE28/5EBDB64D" Ref="#PWR?"  Part="1" 
+AR Path="/5966DBAF/5BBBBE3E/5EBDB64D" Ref="#PWR?"  Part="1" 
+AR Path="/5966DBAF/5BBBBE54/5EBDB64D" Ref="#PWR?"  Part="1" 
+AR Path="/5966DBAF/5BBBBE6A/5EBDB64D" Ref="#PWR?"  Part="1" 
+AR Path="/5966DBAF/5BBBBE80/5EBDB64D" Ref="#PWR?"  Part="1" 
+AR Path="/5966DBAF/5BBBBE96/5EBDB64D" Ref="#PWR?"  Part="1" 
+AR Path="/5E506090/5EBDB64D" Ref="#PWR?"  Part="1" 
+AR Path="/5E50626D/5EBDB64D" Ref="#PWR?"  Part="1" 
+AR Path="/5E50629A/5EBDB64D" Ref="#PWR?"  Part="1" 
+AR Path="/5E49E833/5E506090/5EBDB64D" Ref="#PWR?"  Part="1" 
+AR Path="/5E49E833/5E506A1D/5EBDB64D" Ref="#PWR?"  Part="1" 
+AR Path="/5E63996E/5E506090/5EBDB64D" Ref="#PWR?"  Part="1" 
+AR Path="/5E63996E/5E506A1D/5EBDB64D" Ref="#PWR?"  Part="1" 
+AR Path="/5E49E833/5E98B2B3/5EBDB64D" Ref="#PWR?"  Part="1" 
+AR Path="/5E49E833/5E98B969/5EBDB64D" Ref="#PWR?"  Part="1" 
+AR Path="/5E49E833/5E991864/5EBDB64D" Ref="#PWR?"  Part="1" 
+AR Path="/5E49E833/5E99186B/5EBDB64D" Ref="#PWR?"  Part="1" 
+AR Path="/5E49E833/5E991884/5EBDB64D" Ref="#PWR?"  Part="1" 
+AR Path="/5E49E833/5E991890/5EBDB64D" Ref="#PWR?"  Part="1" 
+AR Path="/5E49E833/5E991F74/5EBDB64D" Ref="#PWR?"  Part="1" 
+AR Path="/5E49EA18/5E9A6A8E/5EBDB64D" Ref="#PWR0210"  Part="1" 
+AR Path="/5E49EA18/5E9A6A99/5EBDB64D" Ref="#PWR0222"  Part="1" 
+F 0 "#PWR0222" H 6875 3875 50  0001 C CNN
+F 1 "GND" H 6875 3975 50  0000 C CNN
+F 2 "" H 6875 4125 50  0001 C CNN
+F 3 "" H 6875 4125 50  0001 C CNN
+	1    6875 4125
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	6875 3725 6875 3775
+Wire Wire Line
+	6875 4075 6875 4125
+$Comp
+L pressurization_series1:L6234PD U?
+U 1 1 5E935912
+P 2925 3350
+AR Path="/5E9356D9/5E935810/5E935912" Ref="U?"  Part="1" 
+AR Path="/5E9356D9/5E9A3BCC/5E935912" Ref="U?"  Part="1" 
+AR Path="/5E49EA18/5E9A6A8E/5E935912" Ref="U18"  Part="1" 
+AR Path="/5E49EA18/5E9A6A99/5E935912" Ref="U20"  Part="1" 
+AR Path="/5E49EA18/5E99D32D/5E935912" Ref="U?"  Part="1" 
+AR Path="/5E935912" Ref="U?"  Part="1" 
+F 0 "U20" H 2925 4217 50  0000 C CNN
+F 1 "L6234PD" H 2925 4126 50  0000 C CNN
+F 2 "libs:L6234PD" H 2925 3350 50  0001 L BNN
+F 3 "https://www.st.com/content/ccc/resource/technical/document/datasheet/6d/24/36/da/ab/59/43/ba/CD00000046.pdf/files/CD00000046.pdf/jcr:content/translations/en.CD00000046.pdf" H 2925 3350 50  0001 L BNN
+F 4 "IPC 7351B" H 2925 3350 50  0001 L BNN "Field4"
+F 5 "SOP-21" H 2925 3350 50  0001 L BNN "Field5"
+F 6 "11" H 2925 3350 50  0001 L BNN "Field6"
+	1    2925 3350
+	1    0    0    -1  
+$EndComp
+Text Label 3975 3750 0    50   ~ 0
+sense
+Wire Wire Line
+	5700 3925 5700 3975
+Wire Wire Line
+	5700 3825 5700 3750
+$Comp
+L pressurization_series1-rescue:+3.3V-power #PWR0207
+U 1 1 5ECCFDBA
+P 5700 3750
+AR Path="/5E49EA18/5E9A6A8E/5ECCFDBA" Ref="#PWR0207"  Part="1" 
+AR Path="/5E49EA18/5E9A6A99/5ECCFDBA" Ref="#PWR0219"  Part="1" 
+F 0 "#PWR0219" H 5700 3600 50  0001 C CNN
+F 1 "+3.3V" H 5715 3923 50  0000 C CNN
+F 2 "" H 5700 3750 50  0001 C CNN
+F 3 "" H 5700 3750 50  0001 C CNN
+	1    5700 3750
+	1    0    0    -1  
+$EndComp
+$Comp
+L pressurization_series1-rescue:GNDPWR-power #PWR0205
+U 1 1 5ECD5AF2
+P 4925 3250
+AR Path="/5E49EA18/5E9A6A8E/5ECD5AF2" Ref="#PWR0205"  Part="1" 
+AR Path="/5E49EA18/5E9A6A99/5ECD5AF2" Ref="#PWR0217"  Part="1" 
+F 0 "#PWR0217" H 4925 3050 50  0001 C CNN
+F 1 "GNDPWR" H 4929 3096 50  0000 C CNN
+F 2 "" H 4925 3200 50  0001 C CNN
+F 3 "" H 4925 3200 50  0001 C CNN
+	1    4925 3250
+	1    0    0    -1  
+$EndComp
+$Comp
+L pressurization_series1-rescue:GNDPWR-power #PWR0206
+U 1 1 5ECD69C6
+P 5325 3250
+AR Path="/5E49EA18/5E9A6A8E/5ECD69C6" Ref="#PWR0206"  Part="1" 
+AR Path="/5E49EA18/5E9A6A99/5ECD69C6" Ref="#PWR0218"  Part="1" 
+F 0 "#PWR0218" H 5325 3050 50  0001 C CNN
+F 1 "GNDPWR" H 5329 3096 50  0000 C CNN
+F 2 "" H 5325 3200 50  0001 C CNN
+F 3 "" H 5325 3200 50  0001 C CNN
+	1    5325 3250
+	1    0    0    -1  
+$EndComp
+Connection ~ 3650 2750
+Wire Wire Line
+	3650 2750 3650 2450
+$Comp
+L pressurization_series1-rescue:+12V-power #PWR0201
+U 1 1 5EB6F7CD
+P 3650 2450
+AR Path="/5E49EA18/5E9A6A8E/5EB6F7CD" Ref="#PWR0201"  Part="1" 
+AR Path="/5E49EA18/5E9A6A99/5EB6F7CD" Ref="#PWR0213"  Part="1" 
+F 0 "#PWR0213" H 3650 2300 50  0001 C CNN
+F 1 "+12V" H 3665 2623 50  0000 C CNN
+F 2 "" H 3650 2450 50  0001 C CNN
+F 3 "" H 3650 2450 50  0001 C CNN
+	1    3650 2450
+	1    0    0    -1  
+$EndComp
+$Comp
+L pressurization_series1-rescue:Fuse-Device F3
+U 1 1 5F03C1F2
+P 4175 4575
+AR Path="/5E49EA18/5E9A6A8E/5F03C1F2" Ref="F3"  Part="1" 
+AR Path="/5E49EA18/5E9A6A99/5F03C1F2" Ref="F4"  Part="1" 
+F 0 "F4" H 4235 4621 50  0000 L CNN
+F 1 "Fuse" H 4235 4530 50  0000 L CNN
+F 2 "KiCad:Fuse_1206_3216Metric" V 4105 4575 50  0001 C CNN
+F 3 "~" H 4175 4575 50  0001 C CNN
+	1    4175 4575
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	4175 4300 4175 4425
+Connection ~ 4175 4300
+Wire Wire Line
+	4175 4725 4175 4825
+$EndSCHEMATC

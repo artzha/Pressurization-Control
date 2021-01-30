@@ -1,0 +1,961 @@
+EESchema Schematic File Version 4
+EELAYER 30 0
+EELAYER END
+$Descr A4 11693 8268
+encoding utf-8
+Sheet 16 25
+Title "Pressurization Board Series 1"
+Date "2020-08-17"
+Rev "Rev A"
+Comp "Michigan Aeronautical Science Association (MASA)"
+Comment1 "Josh Azrin & Arthur Zhang"
+Comment2 ""
+Comment3 ""
+Comment4 ""
+$EndDescr
+Text GLabel 1275 2775 0    50   Input ~ 0
+e_pt0
+Text GLabel 1275 2675 0    50   Input ~ 0
+e_pt1
+Text GLabel 1275 2475 0    50   Input ~ 0
+e_pt3
+Text GLabel 1275 2375 0    50   Input ~ 0
+e_pt4
+Text GLabel 1275 2275 0    50   Input ~ 0
+e_pt5
+Text GLabel 1275 2075 0    50   Input ~ 0
+i_vlv0
+Text GLabel 1325 6200 0    50   Input ~ 0
+i_vlv1
+Text GLabel 1325 6000 0    50   Input ~ 0
+i_vlv2
+Text GLabel 1325 5800 0    50   Input ~ 0
+i_vlv3
+Text GLabel 1325 5600 0    50   Input ~ 0
+i_vlv4
+Text GLabel 1325 5400 0    50   Input ~ 0
+i_vlv5
+Text GLabel 1325 5200 0    50   Input ~ 0
+i_vlv6
+Text GLabel 1275 3175 0    50   Input ~ 0
+i_vlv7
+Text GLabel 1275 3375 0    50   Input ~ 0
+i_vlv8
+Text GLabel 5225 3425 0    49   Input ~ 0
+i3v3
+Text GLabel 1275 2875 0    49   Input ~ 0
+i5v
+Text GLabel 5225 2925 0    50   Input ~ 0
+i_mtr0A
+Text GLabel 5225 2425 0    50   Input ~ 0
+i_mtr1A
+Text GLabel 1275 2575 0    50   Input ~ 0
+e_pt2
+Wire Wire Line
+	9675 2350 9575 2350
+Wire Wire Line
+	9675 2550 9575 2550
+Text GLabel 9575 2350 0    50   Input ~ 0
+adc0_cs
+Text GLabel 9575 2550 0    50   Input ~ 0
+adc1_cs
+Text GLabel 5225 2625 0    50   Input ~ 0
+i_mtr2
+Text GLabel 5225 2725 0    50   Input ~ 0
+i_mtr3
+Text GLabel 5225 3725 0    50   Input ~ 0
+ebatt
+$Comp
+L pressurization_series1:MAX11131AUI+ U26
+U 1 1 5ED5E911
+P 1350 2075
+F 0 "U26" H 2150 2340 50  0000 C CNN
+F 1 "MAX11131AUI+" H 2150 2249 50  0000 C CNN
+F 2 "libs:MAX11131AUI+" H 2800 2175 50  0001 L CNN
+F 3 "https://componentsearchengine.com/Datasheets/2/MAX11131AUI+.pdf" H 2800 2075 50  0001 L CNN
+F 4 "MAXIM INTEGRATED PRODUCTS - MAX11131AUI+ - ADC, 16-CH, SAR, 12BIT, 3MSPS, TSSOP-28" H 2800 1975 50  0001 L CNN "Description"
+F 5 "1.1" H 2800 1875 50  0001 L CNN "Height"
+F 6 "700-MAX11131AUI+" H 2800 1775 50  0001 L CNN "Mouser Part Number"
+F 7 "https://www.mouser.co.uk/ProductDetail/Maxim-Integrated/MAX11131AUI%2b?qs=%2Fsr0sUXBX%2FroK8LOyTT5rQ%3D%3D" H 2800 1675 50  0001 L CNN "Mouser Price/Stock"
+F 8 "Maxim Integrated" H 2800 1575 50  0001 L CNN "Manufacturer_Name"
+F 9 "MAX11131AUI+" H 2800 1475 50  0001 L CNN "Manufacturer_Part_Number"
+	1    1350 2075
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	2950 2075 3400 2075
+Wire Wire Line
+	3400 2075 3400 1975
+$Comp
+L power:+3.3VADC #PWR?
+U 1 1 5ED6B6CE
+P 3400 1975
+AR Path="/596D7A67/5ED6B6CE" Ref="#PWR?"  Part="1" 
+AR Path="/596D7A67/5C1804A3/5ED6B6CE" Ref="#PWR?"  Part="1" 
+AR Path="/5E49E893/5ED6B6CE" Ref="#PWR?"  Part="1" 
+AR Path="/5E63996E/5ED6B6CE" Ref="#PWR0254"  Part="1" 
+F 0 "#PWR0254" H 3550 1925 50  0001 C CNN
+F 1 "+3.3VADC" H 3400 2075 50  0000 C CNN
+F 2 "" H 3400 1975 50  0001 C CNN
+F 3 "" H 3400 1975 50  0001 C CNN
+	1    3400 1975
+	1    0    0    -1  
+$EndComp
+Connection ~ 3400 2075
+Wire Wire Line
+	2950 3275 3050 3275
+$Comp
+L Device:C C67
+U 1 1 5ED72466
+P 3250 3125
+F 0 "C67" H 3365 3171 50  0000 L CNN
+F 1 "10u" H 3365 3080 50  0000 L CNN
+F 2 "KiCad:C_0805_2012Metric" H 3288 2975 50  0001 C CNN
+F 3 "~" H 3250 3125 50  0001 C CNN
+	1    3250 3125
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:C C69
+U 1 1 5ED72F2D
+P 3600 3125
+F 0 "C69" H 3715 3171 50  0000 L CNN
+F 1 "100n" H 3715 3080 50  0000 L CNN
+F 2 "KiCad:C_0603_1608Metric" H 3638 2975 50  0001 C CNN
+F 3 "~" H 3600 3125 50  0001 C CNN
+	1    3600 3125
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	3050 3275 3050 3375
+Connection ~ 3050 3275
+Wire Wire Line
+	2950 3375 3050 3375
+Connection ~ 3050 3375
+Wire Wire Line
+	3050 3375 3050 3475
+Connection ~ 3050 3475
+Wire Wire Line
+	3050 3475 3050 3575
+Wire Wire Line
+	2950 3475 3050 3475
+Wire Wire Line
+	2950 3575 3050 3575
+Connection ~ 3050 3575
+Wire Wire Line
+	3050 3575 3050 3850
+$Comp
+L power:GND #PWR0252
+U 1 1 5ED7A970
+P 3050 3850
+F 0 "#PWR0252" H 3050 3600 50  0001 C CNN
+F 1 "GND" H 3055 3677 50  0000 C CNN
+F 2 "" H 3050 3850 50  0001 C CNN
+F 3 "" H 3050 3850 50  0001 C CNN
+	1    3050 3850
+	1    0    0    -1  
+$EndComp
+Connection ~ 3250 2975
+Connection ~ 3250 3275
+Wire Wire Line
+	3050 3275 3250 3275
+Wire Wire Line
+	3250 2975 3600 2975
+Wire Wire Line
+	3250 3275 3600 3275
+Connection ~ 3600 2975
+Wire Wire Line
+	2950 2975 3250 2975
+Wire Wire Line
+	2950 2875 3600 2875
+$Comp
+L power:+3.3V #PWR0256
+U 1 1 5ED8480B
+P 3600 2750
+F 0 "#PWR0256" H 3600 2600 50  0001 C CNN
+F 1 "+3.3V" H 3615 2923 50  0000 C CNN
+F 2 "" H 3600 2750 50  0001 C CNN
+F 3 "" H 3600 2750 50  0001 C CNN
+	1    3600 2750
+	1    0    0    -1  
+$EndComp
+Connection ~ 3600 2875
+Wire Wire Line
+	3600 2975 3600 2875
+Wire Wire Line
+	3600 2875 3600 2750
+Text GLabel 3025 2175 2    50   Input ~ 0
+adc0_eoc
+Wire Wire Line
+	2950 2175 3025 2175
+Text GLabel 3025 2675 2    50   Input ~ 0
+adc0_cs
+Wire Wire Line
+	2950 2675 3025 2675
+Text GLabel 1275 3475 0    50   Input ~ 0
+adc0_cnvst
+Wire Wire Line
+	1350 3475 1275 3475
+Wire Wire Line
+	2950 2375 3025 2375
+Wire Wire Line
+	2950 2775 3025 2775
+Text GLabel 3400 2375 2    50   Input ~ 0
+SPI1_MISO
+$Comp
+L Device:R R?
+U 1 1 5ED96CDB
+P 3175 2375
+AR Path="/5E49E9B7/5ED96CDB" Ref="R?"  Part="1" 
+AR Path="/5E63996E/5ED96CDB" Ref="R147"  Part="1" 
+F 0 "R147" V 3100 2375 50  0000 C CNN
+F 1 "Rt" V 3175 2375 50  0000 C CNN
+F 2 "KiCad:R_0603_1608Metric" V 3105 2375 50  0001 C CNN
+F 3 "~" H 3175 2375 50  0001 C CNN
+	1    3175 2375
+	0    1    1    0   
+$EndComp
+Text GLabel 3025 2575 2    50   Input ~ 0
+SPI1_MOSI
+Wire Wire Line
+	2950 2575 3025 2575
+Text GLabel 3025 2775 2    50   Input ~ 0
+SPI1_SCK
+Wire Wire Line
+	3325 2375 3400 2375
+Wire Wire Line
+	3400 2075 4100 2075
+Wire Wire Line
+	4100 2425 4100 2475
+Wire Wire Line
+	4100 2075 4100 2125
+$Comp
+L power:GND #PWR?
+U 1 1 5ED6B6D4
+P 4100 2475
+AR Path="/596D7A67/5ED6B6D4" Ref="#PWR?"  Part="1" 
+AR Path="/596D7A67/5C1804A3/5ED6B6D4" Ref="#PWR?"  Part="1" 
+AR Path="/5E49E893/5ED6B6D4" Ref="#PWR?"  Part="1" 
+AR Path="/5E63996E/5ED6B6D4" Ref="#PWR0258"  Part="1" 
+F 0 "#PWR0258" H 4100 2225 50  0001 C CNN
+F 1 "GND" H 4100 2325 50  0000 C CNN
+F 2 "" H 4100 2475 50  0001 C CNN
+F 3 "" H 4100 2475 50  0001 C CNN
+	1    4100 2475
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:C C?
+U 1 1 5ED6B6C8
+P 4100 2275
+AR Path="/596D7A67/5ED6B6C8" Ref="C?"  Part="1" 
+AR Path="/596D7A67/5C1804A3/5ED6B6C8" Ref="C?"  Part="1" 
+AR Path="/5E49E893/5ED6B6C8" Ref="C?"  Part="1" 
+AR Path="/5E63996E/5ED6B6C8" Ref="C71"  Part="1" 
+F 0 "C71" H 4125 2375 50  0000 L CNN
+F 1 "u47" H 4125 2175 50  0000 L CNN
+F 2 "KiCad:C_0805_2012Metric" H 4138 2125 50  0001 C CNN
+F 3 "" H 4100 2275 50  0001 C CNN
+	1    4100 2275
+	1    0    0    -1  
+$EndComp
+Text Notes 2850 2500 0    50   ~ 0
+Termination resistor
+Wire Wire Line
+	1275 2175 1350 2175
+Wire Wire Line
+	1325 6300 1400 6300
+Wire Wire Line
+	1325 6100 1400 6100
+Wire Wire Line
+	1325 5900 1400 5900
+Wire Wire Line
+	1325 5700 1400 5700
+Wire Wire Line
+	1325 5500 1400 5500
+Wire Wire Line
+	1325 5300 1400 5300
+Wire Wire Line
+	1275 3075 1350 3075
+Wire Wire Line
+	1275 3275 1350 3275
+Wire Wire Line
+	1275 3575 1350 3575
+Wire Wire Line
+	1325 6400 1400 6400
+Wire Wire Line
+	1325 6500 1400 6500
+Text GLabel 1275 2175 0    50   Input ~ 0
+e_vlv0
+Text GLabel 1325 6300 0    50   Input ~ 0
+e_vlv1
+Text GLabel 1325 6100 0    50   Input ~ 0
+e_vlv2
+Text GLabel 1325 5900 0    50   Input ~ 0
+e_vlv3
+Text GLabel 1325 5700 0    50   Input ~ 0
+e_vlv4
+Text GLabel 1325 5500 0    50   Input ~ 0
+e_vlv5
+Text GLabel 1325 5300 0    50   Input ~ 0
+e_vlv6
+Text GLabel 1275 3075 0    50   Input ~ 0
+e_vlv7
+Text GLabel 1275 3275 0    50   Input ~ 0
+e_vlv8
+$Comp
+L pressurization_series1:MAX11131AUI+ U27
+U 1 1 5EDE9AF0
+P 1400 5200
+F 0 "U27" H 2200 5465 50  0000 C CNN
+F 1 "MAX11131AUI+" H 2200 5374 50  0000 C CNN
+F 2 "libs:MAX11131AUI+" H 2850 5300 50  0001 L CNN
+F 3 "https://componentsearchengine.com/Datasheets/2/MAX11131AUI+.pdf" H 2850 5200 50  0001 L CNN
+F 4 "MAXIM INTEGRATED PRODUCTS - MAX11131AUI+ - ADC, 16-CH, SAR, 12BIT, 3MSPS, TSSOP-28" H 2850 5100 50  0001 L CNN "Description"
+F 5 "1.1" H 2850 5000 50  0001 L CNN "Height"
+F 6 "700-MAX11131AUI+" H 2850 4900 50  0001 L CNN "Mouser Part Number"
+F 7 "https://www.mouser.co.uk/ProductDetail/Maxim-Integrated/MAX11131AUI%2b?qs=%2Fsr0sUXBX%2FroK8LOyTT5rQ%3D%3D" H 2850 4800 50  0001 L CNN "Mouser Price/Stock"
+F 8 "Maxim Integrated" H 2850 4700 50  0001 L CNN "Manufacturer_Name"
+F 9 "MAX11131AUI+" H 2850 4600 50  0001 L CNN "Manufacturer_Part_Number"
+	1    1400 5200
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	3000 5200 3450 5200
+Wire Wire Line
+	3450 5200 3450 5100
+$Comp
+L power:+3.3VADC #PWR?
+U 1 1 5EDE9AF8
+P 3450 5100
+AR Path="/596D7A67/5EDE9AF8" Ref="#PWR?"  Part="1" 
+AR Path="/596D7A67/5C1804A3/5EDE9AF8" Ref="#PWR?"  Part="1" 
+AR Path="/5E49E893/5EDE9AF8" Ref="#PWR?"  Part="1" 
+AR Path="/5E63996E/5EDE9AF8" Ref="#PWR0255"  Part="1" 
+F 0 "#PWR0255" H 3600 5050 50  0001 C CNN
+F 1 "+3.3VADC" H 3450 5200 50  0000 C CNN
+F 2 "" H 3450 5100 50  0001 C CNN
+F 3 "" H 3450 5100 50  0001 C CNN
+	1    3450 5100
+	1    0    0    -1  
+$EndComp
+Connection ~ 3450 5200
+Wire Wire Line
+	3000 6400 3100 6400
+$Comp
+L Device:C C68
+U 1 1 5EDE9B00
+P 3300 6250
+F 0 "C68" H 3415 6296 50  0000 L CNN
+F 1 "10u" H 3415 6205 50  0000 L CNN
+F 2 "KiCad:C_0805_2012Metric" H 3338 6100 50  0001 C CNN
+F 3 "~" H 3300 6250 50  0001 C CNN
+	1    3300 6250
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:C C70
+U 1 1 5EDE9B06
+P 3650 6250
+F 0 "C70" H 3765 6296 50  0000 L CNN
+F 1 "100n" H 3765 6205 50  0000 L CNN
+F 2 "KiCad:C_0603_1608Metric" H 3688 6100 50  0001 C CNN
+F 3 "~" H 3650 6250 50  0001 C CNN
+	1    3650 6250
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	3100 6400 3100 6500
+Connection ~ 3100 6400
+Wire Wire Line
+	3000 6500 3100 6500
+Connection ~ 3100 6500
+Wire Wire Line
+	3100 6500 3100 6600
+Connection ~ 3100 6600
+Wire Wire Line
+	3100 6600 3100 6700
+Wire Wire Line
+	3000 6600 3100 6600
+Wire Wire Line
+	3000 6700 3100 6700
+Connection ~ 3100 6700
+Wire Wire Line
+	3100 6700 3100 6975
+$Comp
+L power:GND #PWR0253
+U 1 1 5EDE9B17
+P 3100 6975
+F 0 "#PWR0253" H 3100 6725 50  0001 C CNN
+F 1 "GND" H 3105 6802 50  0000 C CNN
+F 2 "" H 3100 6975 50  0001 C CNN
+F 3 "" H 3100 6975 50  0001 C CNN
+	1    3100 6975
+	1    0    0    -1  
+$EndComp
+Connection ~ 3300 6100
+Connection ~ 3300 6400
+Wire Wire Line
+	3100 6400 3300 6400
+Wire Wire Line
+	3300 6100 3650 6100
+Wire Wire Line
+	3300 6400 3650 6400
+Connection ~ 3650 6100
+Wire Wire Line
+	3000 6100 3300 6100
+Wire Wire Line
+	3000 6000 3650 6000
+$Comp
+L power:+3.3V #PWR0257
+U 1 1 5EDE9B25
+P 3650 5875
+F 0 "#PWR0257" H 3650 5725 50  0001 C CNN
+F 1 "+3.3V" H 3665 6048 50  0000 C CNN
+F 2 "" H 3650 5875 50  0001 C CNN
+F 3 "" H 3650 5875 50  0001 C CNN
+	1    3650 5875
+	1    0    0    -1  
+$EndComp
+Connection ~ 3650 6000
+Wire Wire Line
+	3650 6100 3650 6000
+Wire Wire Line
+	3650 6000 3650 5875
+Text GLabel 3075 5300 2    50   Input ~ 0
+adc1_eoc
+Wire Wire Line
+	3000 5300 3075 5300
+Text GLabel 3075 5800 2    50   Input ~ 0
+adc1_cs
+Wire Wire Line
+	3000 5800 3075 5800
+Text GLabel 1325 6600 0    50   Input ~ 0
+adc1_cnvst
+Wire Wire Line
+	3000 5500 3075 5500
+Wire Wire Line
+	3000 5900 3075 5900
+Text GLabel 3450 5500 2    50   Input ~ 0
+SPI1_MISO
+$Comp
+L Device:R R?
+U 1 1 5EDE9B37
+P 3225 5500
+AR Path="/5E49E9B7/5EDE9B37" Ref="R?"  Part="1" 
+AR Path="/5E63996E/5EDE9B37" Ref="R148"  Part="1" 
+F 0 "R148" V 3150 5500 50  0000 C CNN
+F 1 "Rt" V 3225 5500 50  0000 C CNN
+F 2 "KiCad:R_0603_1608Metric" V 3155 5500 50  0001 C CNN
+F 3 "~" H 3225 5500 50  0001 C CNN
+	1    3225 5500
+	0    1    1    0   
+$EndComp
+Text GLabel 3075 5700 2    50   Input ~ 0
+SPI1_MOSI
+Wire Wire Line
+	3000 5700 3075 5700
+Text GLabel 3075 5900 2    50   Input ~ 0
+SPI1_SCK
+Wire Wire Line
+	3375 5500 3450 5500
+Wire Wire Line
+	3450 5200 4150 5200
+Wire Wire Line
+	4150 5550 4150 5600
+Wire Wire Line
+	4150 5200 4150 5250
+$Comp
+L power:GND #PWR?
+U 1 1 5EDE9B44
+P 4150 5600
+AR Path="/596D7A67/5EDE9B44" Ref="#PWR?"  Part="1" 
+AR Path="/596D7A67/5C1804A3/5EDE9B44" Ref="#PWR?"  Part="1" 
+AR Path="/5E49E893/5EDE9B44" Ref="#PWR?"  Part="1" 
+AR Path="/5E63996E/5EDE9B44" Ref="#PWR0259"  Part="1" 
+F 0 "#PWR0259" H 4150 5350 50  0001 C CNN
+F 1 "GND" H 4150 5450 50  0000 C CNN
+F 2 "" H 4150 5600 50  0001 C CNN
+F 3 "" H 4150 5600 50  0001 C CNN
+	1    4150 5600
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:C C?
+U 1 1 5EDE9B4A
+P 4150 5400
+AR Path="/596D7A67/5EDE9B4A" Ref="C?"  Part="1" 
+AR Path="/596D7A67/5C1804A3/5EDE9B4A" Ref="C?"  Part="1" 
+AR Path="/5E49E893/5EDE9B4A" Ref="C?"  Part="1" 
+AR Path="/5E63996E/5EDE9B4A" Ref="C72"  Part="1" 
+F 0 "C72" H 4175 5500 50  0000 L CNN
+F 1 "u47" H 4175 5300 50  0000 L CNN
+F 2 "KiCad:C_0805_2012Metric" H 4188 5250 50  0001 C CNN
+F 3 "" H 4150 5400 50  0001 C CNN
+	1    4150 5400
+	1    0    0    -1  
+$EndComp
+Text Notes 2900 5625 0    50   ~ 0
+Termination resistor
+Wire Wire Line
+	1275 2075 1350 2075
+Wire Wire Line
+	1325 6200 1400 6200
+Wire Wire Line
+	1325 6000 1400 6000
+Wire Wire Line
+	1325 5800 1400 5800
+Wire Wire Line
+	1325 5600 1400 5600
+Wire Wire Line
+	1325 5400 1400 5400
+Wire Wire Line
+	1325 5200 1400 5200
+Wire Wire Line
+	1275 3175 1350 3175
+Wire Wire Line
+	1275 3375 1350 3375
+Wire Wire Line
+	1275 2275 1350 2275
+Wire Wire Line
+	1275 2375 1350 2375
+Wire Wire Line
+	1275 2475 1350 2475
+Wire Wire Line
+	1275 2575 1350 2575
+Wire Wire Line
+	1275 2675 1350 2675
+Wire Wire Line
+	1275 2775 1350 2775
+Wire Wire Line
+	6900 2425 7350 2425
+Wire Wire Line
+	7350 2425 7350 2325
+$Comp
+L power:+3.3VADC #PWR?
+U 1 1 5EE05EDD
+P 7350 2325
+AR Path="/596D7A67/5EE05EDD" Ref="#PWR?"  Part="1" 
+AR Path="/596D7A67/5C1804A3/5EE05EDD" Ref="#PWR?"  Part="1" 
+AR Path="/5E49E893/5EE05EDD" Ref="#PWR?"  Part="1" 
+AR Path="/5E63996E/5EE05EDD" Ref="#PWR0262"  Part="1" 
+F 0 "#PWR0262" H 7500 2275 50  0001 C CNN
+F 1 "+3.3VADC" H 7350 2425 50  0000 C CNN
+F 2 "" H 7350 2325 50  0001 C CNN
+F 3 "" H 7350 2325 50  0001 C CNN
+	1    7350 2325
+	1    0    0    -1  
+$EndComp
+Connection ~ 7350 2425
+Wire Wire Line
+	6900 3625 7000 3625
+$Comp
+L Device:C C74
+U 1 1 5EE05EE5
+P 7200 3475
+F 0 "C74" H 7315 3521 50  0000 L CNN
+F 1 "10u" H 7315 3430 50  0000 L CNN
+F 2 "KiCad:C_0805_2012Metric" H 7238 3325 50  0001 C CNN
+F 3 "~" H 7200 3475 50  0001 C CNN
+	1    7200 3475
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:C C75
+U 1 1 5EE05EEB
+P 7550 3475
+F 0 "C75" H 7665 3521 50  0000 L CNN
+F 1 "100n" H 7665 3430 50  0000 L CNN
+F 2 "KiCad:C_0603_1608Metric" H 7588 3325 50  0001 C CNN
+F 3 "~" H 7550 3475 50  0001 C CNN
+	1    7550 3475
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	7000 3625 7000 3725
+Connection ~ 7000 3625
+Wire Wire Line
+	6900 3725 7000 3725
+Connection ~ 7000 3725
+Wire Wire Line
+	7000 3725 7000 3825
+Connection ~ 7000 3825
+Wire Wire Line
+	7000 3825 7000 3925
+Wire Wire Line
+	6900 3825 7000 3825
+Wire Wire Line
+	6900 3925 7000 3925
+Connection ~ 7000 3925
+Wire Wire Line
+	7000 3925 7000 4200
+$Comp
+L power:GND #PWR0261
+U 1 1 5EE05EFC
+P 7000 4200
+F 0 "#PWR0261" H 7000 3950 50  0001 C CNN
+F 1 "GND" H 7005 4027 50  0000 C CNN
+F 2 "" H 7000 4200 50  0001 C CNN
+F 3 "" H 7000 4200 50  0001 C CNN
+	1    7000 4200
+	1    0    0    -1  
+$EndComp
+Connection ~ 7200 3325
+Connection ~ 7200 3625
+Wire Wire Line
+	7000 3625 7200 3625
+Wire Wire Line
+	7200 3325 7550 3325
+Wire Wire Line
+	7200 3625 7550 3625
+Connection ~ 7550 3325
+Wire Wire Line
+	6900 3325 7200 3325
+Wire Wire Line
+	6900 3225 7550 3225
+$Comp
+L power:+3.3V #PWR0263
+U 1 1 5EE05F0A
+P 7550 3100
+F 0 "#PWR0263" H 7550 2950 50  0001 C CNN
+F 1 "+3.3V" H 7565 3273 50  0000 C CNN
+F 2 "" H 7550 3100 50  0001 C CNN
+F 3 "" H 7550 3100 50  0001 C CNN
+	1    7550 3100
+	1    0    0    -1  
+$EndComp
+Connection ~ 7550 3225
+Wire Wire Line
+	7550 3325 7550 3225
+Wire Wire Line
+	7550 3225 7550 3100
+Text GLabel 6975 2525 2    50   Input ~ 0
+adc2_eoc
+Wire Wire Line
+	6900 2525 6975 2525
+Text GLabel 6975 3025 2    50   Input ~ 0
+adc2_cs
+Wire Wire Line
+	6900 3025 6975 3025
+Text GLabel 5225 3825 0    50   Input ~ 0
+adc2_cnvst
+Wire Wire Line
+	5300 3825 5225 3825
+Wire Wire Line
+	6900 2725 6975 2725
+Wire Wire Line
+	6900 3125 6975 3125
+Text GLabel 7350 2725 2    50   Input ~ 0
+SPI1_MISO
+$Comp
+L Device:R R?
+U 1 1 5EE05F1C
+P 7125 2725
+AR Path="/5E49E9B7/5EE05F1C" Ref="R?"  Part="1" 
+AR Path="/5E63996E/5EE05F1C" Ref="R150"  Part="1" 
+F 0 "R150" V 7050 2725 50  0000 C CNN
+F 1 "Rt" V 7125 2725 50  0000 C CNN
+F 2 "KiCad:R_0603_1608Metric" V 7055 2725 50  0001 C CNN
+F 3 "~" H 7125 2725 50  0001 C CNN
+	1    7125 2725
+	0    1    1    0   
+$EndComp
+Text GLabel 6975 2925 2    50   Input ~ 0
+SPI1_MOSI
+Wire Wire Line
+	6900 2925 6975 2925
+Text GLabel 6975 3125 2    50   Input ~ 0
+SPI1_SCK
+Wire Wire Line
+	7275 2725 7350 2725
+Wire Wire Line
+	7350 2425 8050 2425
+Wire Wire Line
+	8050 2775 8050 2825
+Wire Wire Line
+	8050 2425 8050 2475
+$Comp
+L power:GND #PWR?
+U 1 1 5EE05F29
+P 8050 2825
+AR Path="/596D7A67/5EE05F29" Ref="#PWR?"  Part="1" 
+AR Path="/596D7A67/5C1804A3/5EE05F29" Ref="#PWR?"  Part="1" 
+AR Path="/5E49E893/5EE05F29" Ref="#PWR?"  Part="1" 
+AR Path="/5E63996E/5EE05F29" Ref="#PWR0264"  Part="1" 
+F 0 "#PWR0264" H 8050 2575 50  0001 C CNN
+F 1 "GND" H 8050 2675 50  0000 C CNN
+F 2 "" H 8050 2825 50  0001 C CNN
+F 3 "" H 8050 2825 50  0001 C CNN
+	1    8050 2825
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:C C?
+U 1 1 5EE05F2F
+P 8050 2625
+AR Path="/596D7A67/5EE05F2F" Ref="C?"  Part="1" 
+AR Path="/596D7A67/5C1804A3/5EE05F2F" Ref="C?"  Part="1" 
+AR Path="/5E49E893/5EE05F2F" Ref="C?"  Part="1" 
+AR Path="/5E63996E/5EE05F2F" Ref="C76"  Part="1" 
+F 0 "C76" H 8075 2725 50  0000 L CNN
+F 1 "u47" H 8075 2525 50  0000 L CNN
+F 2 "KiCad:C_0805_2012Metric" H 8088 2475 50  0001 C CNN
+F 3 "" H 8050 2625 50  0001 C CNN
+	1    8050 2625
+	1    0    0    -1  
+$EndComp
+Text Notes 6800 2850 0    50   ~ 0
+Termination resistor
+Wire Wire Line
+	5225 2925 5300 2925
+Wire Wire Line
+	5225 2425 5300 2425
+Wire Wire Line
+	5225 2625 5300 2625
+Wire Wire Line
+	5225 2725 5300 2725
+Wire Wire Line
+	5225 3325 5300 3325
+Wire Wire Line
+	5225 3225 5300 3225
+Wire Wire Line
+	5225 3125 5300 3125
+Wire Wire Line
+	5225 3025 5300 3025
+Wire Wire Line
+	5225 3425 5300 3425
+Wire Wire Line
+	5225 3525 5300 3525
+Wire Wire Line
+	1275 2875 1350 2875
+Wire Wire Line
+	1275 2975 1350 2975
+Wire Wire Line
+	5225 3725 5300 3725
+Wire Wire Line
+	5225 3925 5300 3925
+Text GLabel 5225 3325 0    50   Input ~ 0
+pot0
+Text GLabel 5225 3225 0    50   Input ~ 0
+pot1
+Text GLabel 5225 3125 0    50   Input ~ 0
+pot2
+Text GLabel 5225 3025 0    50   Input ~ 0
+pot3
+NoConn ~ 5225 3925
+Text GLabel 5225 3525 0    50   Input ~ 0
+e3v3
+Text GLabel 1275 2975 0    50   Input ~ 0
+e5v
+$Comp
+L Connector:TestPoint TP33
+U 1 1 5EE7A2DF
+P 9675 2350
+F 0 "TP33" V 9629 2538 50  0000 L CNN
+F 1 "TestPoint" V 9720 2538 50  0000 L CNN
+F 2 "libs:TestPoint-EC3" H 9875 2350 50  0001 C CNN
+F 3 "~" H 9875 2350 50  0001 C CNN
+	1    9675 2350
+	0    1    1    0   
+$EndComp
+$Comp
+L Connector:TestPoint TP34
+U 1 1 5EE81D4B
+P 9675 2550
+F 0 "TP34" V 9629 2738 50  0000 L CNN
+F 1 "TestPoint" V 9720 2738 50  0000 L CNN
+F 2 "libs:TestPoint-EC3" H 9875 2550 50  0001 C CNN
+F 3 "~" H 9875 2550 50  0001 C CNN
+	1    9675 2550
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	9675 2750 9575 2750
+Text GLabel 9575 2750 0    50   Input ~ 0
+adc2_cs
+$Comp
+L Connector:TestPoint TP35
+U 1 1 5EE89138
+P 9675 2750
+F 0 "TP35" V 9629 2938 50  0000 L CNN
+F 1 "TestPoint" V 9720 2938 50  0000 L CNN
+F 2 "libs:TestPoint-EC3" H 9875 2750 50  0001 C CNN
+F 3 "~" H 9875 2750 50  0001 C CNN
+	1    9675 2750
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	9675 3050 9575 3050
+Wire Wire Line
+	9675 3250 9575 3250
+Text GLabel 9575 3050 0    50   Input ~ 0
+adc0_eoc
+Text GLabel 9575 3250 0    50   Input ~ 0
+adc1_eoc
+$Comp
+L Connector:TestPoint TP36
+U 1 1 5EE9186A
+P 9675 3050
+F 0 "TP36" V 9629 3238 50  0000 L CNN
+F 1 "TestPoint" V 9720 3238 50  0000 L CNN
+F 2 "libs:TestPoint-EC3" H 9875 3050 50  0001 C CNN
+F 3 "~" H 9875 3050 50  0001 C CNN
+	1    9675 3050
+	0    1    1    0   
+$EndComp
+$Comp
+L Connector:TestPoint TP37
+U 1 1 5EE91870
+P 9675 3250
+F 0 "TP37" V 9629 3438 50  0000 L CNN
+F 1 "TestPoint" V 9720 3438 50  0000 L CNN
+F 2 "libs:TestPoint-EC3" H 9875 3250 50  0001 C CNN
+F 3 "~" H 9875 3250 50  0001 C CNN
+	1    9675 3250
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	9675 3450 9575 3450
+Text GLabel 9575 3450 0    50   Input ~ 0
+adc2_eoc
+$Comp
+L Connector:TestPoint TP38
+U 1 1 5EE91878
+P 9675 3450
+F 0 "TP38" V 9629 3638 50  0000 L CNN
+F 1 "TestPoint" V 9720 3638 50  0000 L CNN
+F 2 "libs:TestPoint-EC3" H 9875 3450 50  0001 C CNN
+F 3 "~" H 9875 3450 50  0001 C CNN
+	1    9675 3450
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	9675 3725 9575 3725
+Wire Wire Line
+	9675 3925 9575 3925
+Text GLabel 9575 3725 0    50   Input ~ 0
+adc0_cnvst
+Text GLabel 9575 3925 0    50   Input ~ 0
+adc1_cnvst
+$Comp
+L Connector:TestPoint TP39
+U 1 1 5EE9A78D
+P 9675 3725
+F 0 "TP39" V 9629 3913 50  0000 L CNN
+F 1 "TestPoint" V 9720 3913 50  0000 L CNN
+F 2 "libs:TestPoint-EC3" H 9875 3725 50  0001 C CNN
+F 3 "~" H 9875 3725 50  0001 C CNN
+	1    9675 3725
+	0    1    1    0   
+$EndComp
+$Comp
+L Connector:TestPoint TP40
+U 1 1 5EE9A793
+P 9675 3925
+F 0 "TP40" V 9629 4113 50  0000 L CNN
+F 1 "TestPoint" V 9720 4113 50  0000 L CNN
+F 2 "libs:TestPoint-EC3" H 9875 3925 50  0001 C CNN
+F 3 "~" H 9875 3925 50  0001 C CNN
+	1    9675 3925
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	9675 4125 9575 4125
+Text GLabel 9575 4125 0    50   Input ~ 0
+adc2_cnvst
+$Comp
+L Connector:TestPoint TP41
+U 1 1 5EE9A79B
+P 9675 4125
+F 0 "TP41" V 9629 4313 50  0000 L CNN
+F 1 "TestPoint" V 9720 4313 50  0000 L CNN
+F 2 "libs:TestPoint-EC3" H 9875 4125 50  0001 C CNN
+F 3 "~" H 9875 4125 50  0001 C CNN
+	1    9675 4125
+	0    1    1    0   
+$EndComp
+NoConn ~ 1325 6400
+NoConn ~ 1325 6500
+Text Notes 750  825  0    123  ~ 25
+Analog to Digital Converters
+Wire Notes Line
+	8275 475  8275 6525
+Text Notes 8500 800  0    123  ~ 25
+ADC Test Points\n
+Wire Wire Line
+	4425 3625 5300 3625
+Wire Wire Line
+	4425 3625 4425 3750
+$Comp
+L Device:R R149
+U 1 1 5EC7C803
+P 4275 3625
+F 0 "R149" V 4175 3625 50  0000 C CNN
+F 1 "R" V 4275 3625 50  0000 C CNN
+F 2 "KiCad:R_0603_1608Metric" V 4205 3625 50  0001 C CNN
+F 3 "~" H 4275 3625 50  0001 C CNN
+	1    4275 3625
+	0    1    1    0   
+$EndComp
+Connection ~ 4425 3625
+$Comp
+L Device:C C73
+U 1 1 5EC7D2A3
+P 4425 3900
+F 0 "C73" H 4540 3946 50  0000 L CNN
+F 1 "C" H 4540 3855 50  0000 L CNN
+F 2 "KiCad:C_0603_1608Metric" H 4463 3750 50  0001 C CNN
+F 3 "~" H 4425 3900 50  0001 C CNN
+	1    4425 3900
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	4125 3625 4025 3625
+Text GLabel 4025 3625 0    49   Input ~ 0
+ibatt
+Wire Wire Line
+	4425 4050 4425 4125
+$Comp
+L power:GND #PWR0260
+U 1 1 5ECB5319
+P 4425 4125
+F 0 "#PWR0260" H 4425 3875 50  0001 C CNN
+F 1 "GND" H 4430 3952 50  0000 C CNN
+F 2 "" H 4425 4125 50  0001 C CNN
+F 3 "" H 4425 4125 50  0001 C CNN
+	1    4425 4125
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	1400 6600 1325 6600
+Wire Wire Line
+	1400 6700 1325 6700
+NoConn ~ 1325 6700
+Text GLabel 1275 3575 0    50   Input ~ 0
+adc_extra
+Text GLabel 5225 2825 0    50   Input ~ 0
+i_mtr0B
+Wire Wire Line
+	5225 2825 5300 2825
+$Comp
+L pressurization_series1:MAX11131AUI+ U28
+U 1 1 5EE05ED5
+P 5300 2425
+F 0 "U28" H 6100 2690 50  0000 C CNN
+F 1 "MAX11131AUI+" H 6100 2599 50  0000 C CNN
+F 2 "libs:MAX11131AUI+" H 6750 2525 50  0001 L CNN
+F 3 "https://componentsearchengine.com/Datasheets/2/MAX11131AUI+.pdf" H 6750 2425 50  0001 L CNN
+F 4 "MAXIM INTEGRATED PRODUCTS - MAX11131AUI+ - ADC, 16-CH, SAR, 12BIT, 3MSPS, TSSOP-28" H 6750 2325 50  0001 L CNN "Description"
+F 5 "1.1" H 6750 2225 50  0001 L CNN "Height"
+F 6 "700-MAX11131AUI+" H 6750 2125 50  0001 L CNN "Mouser Part Number"
+F 7 "https://www.mouser.co.uk/ProductDetail/Maxim-Integrated/MAX11131AUI%2b?qs=%2Fsr0sUXBX%2FroK8LOyTT5rQ%3D%3D" H 6750 2025 50  0001 L CNN "Mouser Price/Stock"
+F 8 "Maxim Integrated" H 6750 1925 50  0001 L CNN "Manufacturer_Name"
+F 9 "MAX11131AUI+" H 6750 1825 50  0001 L CNN "Manufacturer_Part_Number"
+	1    5300 2425
+	1    0    0    -1  
+$EndComp
+Text GLabel 5225 2525 0    50   Input ~ 0
+i_mtr1B
+Wire Wire Line
+	5225 2525 5300 2525
+$EndSCHEMATC

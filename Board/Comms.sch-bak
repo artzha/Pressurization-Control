@@ -1,0 +1,392 @@
+EESchema Schematic File Version 4
+EELAYER 30 0
+EELAYER END
+$Descr A4 11693 8268
+encoding utf-8
+Sheet 17 25
+Title "Pressurization Board Series 1"
+Date "2020-08-17"
+Rev "Rev A"
+Comp "Michigan Aeronautical Science Association (MASA)"
+Comment1 "Josh Azrin & Arthur Zhang"
+Comment2 ""
+Comment3 ""
+Comment4 ""
+$EndDescr
+$Comp
+L pressurization_series1:MAX3491 U29
+U 1 1 5EAA4B84
+P 2525 2450
+F 0 "U29" H 2525 2963 49  0000 C CNN
+F 1 "MAX3491" H 2525 2873 49  0000 C CNN
+F 2 "KiCad:SOIC-14_3.9x8.7mm_P1.27mm" H 2725 1850 49  0001 C CNN
+F 3 "" H 2725 1850 49  0001 C CNN
+	1    2525 2450
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:C C77
+U 1 1 5EAA6D83
+P 1625 2500
+F 0 "C77" H 1740 2546 50  0000 L CNN
+F 1 "100n" H 1740 2455 50  0000 L CNN
+F 2 "KiCad:C_0603_1608Metric" H 1663 2350 50  0001 C CNN
+F 3 "~" H 1625 2500 50  0001 C CNN
+	1    1625 2500
+	1    0    0    -1  
+$EndComp
+Text GLabel 2975 2200 2    50   Input ~ 0
+TX_1_P
+Text GLabel 2975 2300 2    50   Input ~ 0
+TX_1_N
+Text GLabel 2975 2650 2    50   Input ~ 0
+USART1_RX
+Text GLabel 2975 2950 2    50   Input ~ 0
+USART1_TX
+Text GLabel 3425 2225 1    50   Input ~ 0
+RX_1_N
+Text GLabel 3875 2225 1    50   Input ~ 0
+RX_1_P
+$Comp
+L Device:R R151
+U 1 1 5EAA78AB
+P 3650 2300
+F 0 "R151" V 3443 2300 50  0000 C CNN
+F 1 "100" V 3534 2300 50  0000 C CNN
+F 2 "KiCad:R_0603_1608Metric" V 3580 2300 50  0001 C CNN
+F 3 "~" H 3650 2300 50  0001 C CNN
+	1    3650 2300
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	2925 2400 3425 2400
+Wire Wire Line
+	3425 2225 3425 2300
+Wire Wire Line
+	3875 2225 3875 2300
+Wire Wire Line
+	3800 2300 3875 2300
+Connection ~ 3875 2300
+Wire Wire Line
+	3500 2300 3425 2300
+Connection ~ 3425 2300
+Wire Wire Line
+	3425 2300 3425 2400
+Wire Wire Line
+	2925 2500 3875 2500
+Wire Wire Line
+	3875 2300 3875 2500
+Wire Wire Line
+	2975 2200 2925 2200
+Wire Wire Line
+	2925 2300 2975 2300
+Wire Wire Line
+	2975 2650 2925 2650
+Wire Wire Line
+	2975 2950 2925 2950
+Wire Wire Line
+	2925 2750 3875 2750
+Wire Wire Line
+	3875 2750 3875 2875
+Wire Wire Line
+	3700 2850 3700 2700
+Wire Wire Line
+	2925 2850 3700 2850
+$Comp
+L power:+3.3V #PWR0267
+U 1 1 5EAAB040
+P 3700 2700
+F 0 "#PWR0267" H 3700 2550 50  0001 C CNN
+F 1 "+3.3V" H 3715 2873 50  0000 C CNN
+F 2 "" H 3700 2700 50  0001 C CNN
+F 3 "" H 3700 2700 50  0001 C CNN
+	1    3700 2700
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR0268
+U 1 1 5EAAB82C
+P 3875 2875
+F 0 "#PWR0268" H 3875 2625 50  0001 C CNN
+F 1 "GND" H 3880 2702 50  0000 C CNN
+F 2 "" H 3875 2875 50  0001 C CNN
+F 3 "" H 3875 2875 50  0001 C CNN
+	1    3875 2875
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	2125 2300 2075 2300
+Wire Wire Line
+	1625 2300 1625 2350
+Wire Wire Line
+	2125 2700 2075 2700
+Wire Wire Line
+	1625 2700 1625 2650
+$Comp
+L power:GND #PWR0266
+U 1 1 5EAAC3B6
+P 2075 2900
+F 0 "#PWR0266" H 2075 2650 50  0001 C CNN
+F 1 "GND" H 2080 2727 50  0000 C CNN
+F 2 "" H 2075 2900 50  0001 C CNN
+F 3 "" H 2075 2900 50  0001 C CNN
+	1    2075 2900
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:+3.3V #PWR0265
+U 1 1 5EAACE95
+P 2075 2100
+F 0 "#PWR0265" H 2075 1950 50  0001 C CNN
+F 1 "+3.3V" H 2090 2273 50  0000 C CNN
+F 2 "" H 2075 2100 50  0001 C CNN
+F 3 "" H 2075 2100 50  0001 C CNN
+	1    2075 2100
+	1    0    0    -1  
+$EndComp
+NoConn ~ 2125 2450
+NoConn ~ 2125 2550
+Text Notes 775  1325 0    50   ~ 0
+Two separate RS422 lines for\ncommunications between the \nmicro and computer or another board.\nRS422 ICs communicate with the micro\nvia USART.
+$Comp
+L pressurization_series1:MAX3491 U30
+U 1 1 5EAAEABA
+P 5600 2475
+F 0 "U30" H 5600 2988 49  0000 C CNN
+F 1 "MAX3491" H 5600 2898 49  0000 C CNN
+F 2 "KiCad:SOIC-14_3.9x8.7mm_P1.27mm" H 5800 1875 49  0001 C CNN
+F 3 "" H 5800 1875 49  0001 C CNN
+	1    5600 2475
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:C C78
+U 1 1 5EAAEAC4
+P 4700 2525
+F 0 "C78" H 4815 2571 50  0000 L CNN
+F 1 "100n" H 4815 2480 50  0000 L CNN
+F 2 "KiCad:C_0603_1608Metric" H 4738 2375 50  0001 C CNN
+F 3 "~" H 4700 2525 50  0001 C CNN
+	1    4700 2525
+	1    0    0    -1  
+$EndComp
+Text GLabel 6050 2225 2    50   Input ~ 0
+TX_2_P
+Text GLabel 6050 2325 2    50   Input ~ 0
+TX_2_N
+Text GLabel 6050 2675 2    50   Input ~ 0
+USART2_RX
+Text GLabel 6050 2975 2    50   Input ~ 0
+USART2_TX
+Text GLabel 6500 2250 1    50   Input ~ 0
+RX_2_N
+Text GLabel 6950 2250 1    50   Input ~ 0
+RX_2_P
+$Comp
+L Device:R R152
+U 1 1 5EAAEAD4
+P 6725 2325
+F 0 "R152" V 6518 2325 50  0000 C CNN
+F 1 "100" V 6609 2325 50  0000 C CNN
+F 2 "KiCad:R_0603_1608Metric" V 6655 2325 50  0001 C CNN
+F 3 "~" H 6725 2325 50  0001 C CNN
+	1    6725 2325
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	6000 2425 6500 2425
+Wire Wire Line
+	6500 2250 6500 2325
+Wire Wire Line
+	6950 2250 6950 2325
+Wire Wire Line
+	6875 2325 6950 2325
+Connection ~ 6950 2325
+Wire Wire Line
+	6575 2325 6500 2325
+Connection ~ 6500 2325
+Wire Wire Line
+	6500 2325 6500 2425
+Wire Wire Line
+	6000 2525 6950 2525
+Wire Wire Line
+	6950 2325 6950 2525
+Wire Wire Line
+	6050 2225 6000 2225
+Wire Wire Line
+	6000 2325 6050 2325
+Wire Wire Line
+	6050 2675 6000 2675
+Wire Wire Line
+	6050 2975 6000 2975
+Wire Wire Line
+	6000 2775 6950 2775
+Wire Wire Line
+	6950 2775 6950 2900
+Wire Wire Line
+	6775 2875 6775 2725
+Wire Wire Line
+	6000 2875 6775 2875
+$Comp
+L power:+3.3V #PWR0271
+U 1 1 5EAAEAF0
+P 6775 2725
+F 0 "#PWR0271" H 6775 2575 50  0001 C CNN
+F 1 "+3.3V" H 6790 2898 50  0000 C CNN
+F 2 "" H 6775 2725 50  0001 C CNN
+F 3 "" H 6775 2725 50  0001 C CNN
+	1    6775 2725
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR0272
+U 1 1 5EAAEAFA
+P 6950 2900
+F 0 "#PWR0272" H 6950 2650 50  0001 C CNN
+F 1 "GND" H 6955 2727 50  0000 C CNN
+F 2 "" H 6950 2900 50  0001 C CNN
+F 3 "" H 6950 2900 50  0001 C CNN
+	1    6950 2900
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	5200 2325 5150 2325
+Wire Wire Line
+	4700 2325 4700 2375
+Wire Wire Line
+	5200 2725 5150 2725
+Wire Wire Line
+	4700 2725 4700 2675
+$Comp
+L power:GND #PWR0270
+U 1 1 5EAAEB0C
+P 5150 2925
+F 0 "#PWR0270" H 5150 2675 50  0001 C CNN
+F 1 "GND" H 5155 2752 50  0000 C CNN
+F 2 "" H 5150 2925 50  0001 C CNN
+F 3 "" H 5150 2925 50  0001 C CNN
+	1    5150 2925
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:+3.3V #PWR0269
+U 1 1 5EAAEB1A
+P 5150 2125
+F 0 "#PWR0269" H 5150 1975 50  0001 C CNN
+F 1 "+3.3V" H 5165 2298 50  0000 C CNN
+F 2 "" H 5150 2125 50  0001 C CNN
+F 3 "" H 5150 2125 50  0001 C CNN
+	1    5150 2125
+	1    0    0    -1  
+$EndComp
+NoConn ~ 5200 2475
+NoConn ~ 5200 2575
+Text Notes 700  800  0    123  ~ 25
+Communications
+$Comp
+L Connector:TestPoint TP45
+U 1 1 5EF49736
+P 9600 2475
+F 0 "TP45" H 9658 2593 50  0000 L CNN
+F 1 "TestPoint" H 9658 2502 50  0000 L CNN
+F 2 "libs:TestPoint-EC3" H 9800 2475 50  0001 C CNN
+F 3 "~" H 9800 2475 50  0001 C CNN
+	1    9600 2475
+	1    0    0    -1  
+$EndComp
+$Comp
+L Connector:TestPoint TP44
+U 1 1 5EF489BA
+P 9100 2475
+F 0 "TP44" H 9158 2593 50  0000 L CNN
+F 1 "TestPoint" H 9158 2502 50  0000 L CNN
+F 2 "libs:TestPoint-EC3" H 9300 2475 50  0001 C CNN
+F 3 "~" H 9300 2475 50  0001 C CNN
+	1    9100 2475
+	1    0    0    -1  
+$EndComp
+$Comp
+L Connector:TestPoint TP43
+U 1 1 5EF47DBA
+P 8600 2475
+F 0 "TP43" H 8658 2593 50  0000 L CNN
+F 1 "TestPoint" H 8658 2502 50  0000 L CNN
+F 2 "libs:TestPoint-EC3" H 8800 2475 50  0001 C CNN
+F 3 "~" H 8800 2475 50  0001 C CNN
+	1    8600 2475
+	1    0    0    -1  
+$EndComp
+$Comp
+L Connector:TestPoint TP42
+U 1 1 5EF466EE
+P 8100 2475
+F 0 "TP42" H 8158 2593 50  0000 L CNN
+F 1 "TestPoint" H 8158 2502 50  0000 L CNN
+F 2 "libs:TestPoint-EC3" H 8300 2475 50  0001 C CNN
+F 3 "~" H 8300 2475 50  0001 C CNN
+	1    8100 2475
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	9100 2550 9100 2475
+Wire Wire Line
+	9600 2475 9600 2575
+Text GLabel 9600 2575 3    50   Input ~ 0
+USART2_TX
+Text GLabel 9100 2550 3    50   Input ~ 0
+USART2_RX
+Wire Wire Line
+	8100 2550 8100 2475
+Wire Wire Line
+	8600 2475 8600 2575
+Text GLabel 8600 2575 3    50   Input ~ 0
+USART1_TX
+Text GLabel 8100 2550 3    50   Input ~ 0
+USART1_RX
+Wire Wire Line
+	5150 2925 5150 2825
+Connection ~ 5150 2725
+Wire Wire Line
+	5150 2725 4700 2725
+Wire Wire Line
+	5200 2825 5150 2825
+Connection ~ 5150 2825
+Wire Wire Line
+	5150 2825 5150 2725
+Wire Wire Line
+	2075 2100 2075 2200
+Connection ~ 2075 2300
+Wire Wire Line
+	2075 2300 1625 2300
+Wire Wire Line
+	2125 2200 2075 2200
+Connection ~ 2075 2200
+Wire Wire Line
+	2075 2200 2075 2300
+Wire Wire Line
+	2075 2900 2075 2800
+Connection ~ 2075 2700
+Wire Wire Line
+	2075 2700 1625 2700
+Wire Wire Line
+	2125 2800 2075 2800
+Connection ~ 2075 2800
+Wire Wire Line
+	2075 2800 2075 2700
+Wire Wire Line
+	5150 2125 5150 2225
+Connection ~ 5150 2325
+Wire Wire Line
+	5150 2325 4700 2325
+Wire Wire Line
+	5200 2225 5150 2225
+Connection ~ 5150 2225
+Wire Wire Line
+	5150 2225 5150 2325
+Text Notes 2325 1800 0    79   ~ 0
+RS422
+Text Notes 5400 1800 0    79   ~ 0
+RS422
+Text Notes 2325 3425 0    50   ~ 0
+Note: On EC3 max3491csd was used\nShould use max3491esd, better temp rating\n(both are soic-14 package)\n
+$EndSCHEMATC

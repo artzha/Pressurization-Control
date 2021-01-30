@@ -1,0 +1,4 @@
+(sym_lib_table
+  (lib (name pressurization_series1)(type Legacy)(uri ${KIPRJMOD}/libs/pressurization_series1.lib)(options "")(descr ""))
+  (lib (name pressurization_series1-rescue)(type Legacy)(uri ${KIPRJMOD}/pressurization_series1-rescue.lib)(options "")(descr ""))
+)
