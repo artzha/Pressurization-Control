@@ -1,4 +1,4 @@
-# Combustion-Control
+# Pressurization-Control
 Designed by Josh Azrin and Arthur Zhang.
 
 ![Board Front](./Board/renders/pressurization_series1_f.jpg)
