@@ -1,0 +1,6 @@
+[submodule "Firmware"]
+	path = Firmware
+	url = https://gitlab.eecs.umich.edu/masa/avionics/pressurization-board-firmware.git
+[submodule "Board"]
+	path = Board
+	url = https://gitlab.eecs.umich.edu/masa/avionics/pressurization_series1.git
