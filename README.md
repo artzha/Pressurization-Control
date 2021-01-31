@@ -93,9 +93,19 @@ the system uses a virtual timer to approximately execute them at the correct tim
 
 Along with writing C code for interfacing with peripherals using SPI and UART, I also
 developed a telemetry packet format and firmware for communicating with external 
-PCBs and computers. The communication packet COBBs encodes data to increase its 
+PCBs and computers. The communication packet COBs encodes data to increase its 
 resilence to errors and contains useful information like a 32 bit timestamp, packet
 target address, and simple checksum.
+
+![Serial Comms](./docs/serial-comms.png)
+|:--:| 
+| *Logic Flow of Serial Communications Library* |
+
+The serial communication library supports both sending and receiving data over RS-422 transceiver chips, and is capable of handling communications across any amount of daisy chained PCBs. It will become increasingly more important to support daisy chained communications across boards as the rocket becomes more complex because communicatingbetween board to board is highly useful. During both data transmission and reception, the library utilizes a two buffer system for loading and encoding data. By doing this, the system can be easily adapted to a design where an external chip can write telemetry data directly to memory on the microcontroller before it is encoded by the library. This allows for parallel processing of data preparation and transmission. 
+
+The library also provides users with the ability to COBs encode data prior to transmission. Using COBs encoding, 
+otherwise known as Consistent Overhead Byte Stuffing, saves a significant amount of memory on the microcontroller 
+because the algorithm allows boards to unambiguously terminate each transmission frame with a unique termination bit. It does this by replacing all occurrences of a terminator bit in the message with a byte representing the number of spaces until the next terminator bit. The algorithm also guarantees that it will add exactly two bytes to each transmission frame, which allows us to calculate the number of packets that will be sent  in the next transmission frame and include this information in the packet header. 
 
 For additional information on the firmware architecture, please consult me (Arthur Zhang)
 and I will be happy to discuss more details on its implementation.
