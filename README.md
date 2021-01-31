@@ -97,7 +97,7 @@ PCBs and computers. The communication packet COBs encodes data to increase its
 resilence to errors and contains useful information like a 32 bit timestamp, packet
 target address, and simple checksum.
 
-![Serial Comms](./docs/serial-comms.png)
+![Serial Comms](./Board/docs/serial-comms.png)
 |:--:| 
 | *Logic Flow of Serial Communications Library* |
 
